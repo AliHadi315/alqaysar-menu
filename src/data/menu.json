@@ -161,12 +161,12 @@
       "name": "POTATO SANDWICH",
       "description": "بطاطا, سلطة ملفوف, كاتشاب",
       "prices": {
-        "TABLES": 2.22,
-        "TAKE_AWAY": 2.22
+        "TAKE_AWAY": 2.22,
+        "TABLES": 2.22
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "sandwiches",
@@ -181,12 +181,12 @@
       "name": "FRIES BOX علبة بطاطا",
       "description": "200 G",
       "prices": {
-        "TABLES": 2.15,
-        "TAKE_AWAY": 2.22
+        "TAKE_AWAY": 2.22,
+        "TABLES": 2.15
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/big-fries.webp",
       "image_shared": true,
@@ -202,12 +202,12 @@
       "name": "CRISPY SAND كرسبي",
       "description": "كرسبي, بطاطا,سلطة ملفوف, كوكتيل صوص",
       "prices": {
-        "TABLES": 4.44,
-        "TAKE_AWAY": 4.44
+        "TAKE_AWAY": 4.44,
+        "TABLES": 4.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "sandwiches",
@@ -222,12 +222,12 @@
       "name": "FRENCH FRIES PLATE",
       "description": "320 G",
       "prices": {
-        "TABLES": 3.55,
-        "TAKE_AWAY": 3.55
+        "TAKE_AWAY": 3.55,
+        "TABLES": 3.55
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/big-fries.webp",
       "category_slug": "sandwiches",
@@ -242,12 +242,12 @@
       "name": "CRAB SAND كراب",
       "description": "تارتار,كبيس,ملح, خس",
       "prices": {
-        "TABLES": 4.44,
-        "TAKE_AWAY": 4.44
+        "TAKE_AWAY": 4.44,
+        "TABLES": 4.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "sandwiches",
@@ -262,12 +262,12 @@
       "name": "RIZO crispy",
       "description": null,
       "prices": {
-        "TABLES": 4,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/rizo-crispy_1.webp",
       "category_slug": "sandwiches",
@@ -283,12 +283,12 @@
       "description": "Breaded shrimp in Lebanese bread.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/shrimp-sand.webp",
       "category_slug": "sandwiches",
@@ -303,12 +303,12 @@
       "name": "ROSTO SAND روستو",
       "description": "زبدة, مايونيز,خردل,نعنع,بندورة,كبيس, خس",
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/rosto.webp",
       "category_slug": "sandwiches",
@@ -323,12 +323,12 @@
       "name": "CHICKEN SUB SAND تشكن ساب",
       "description": "صدر دجاج مشوي, مايونيز,ثوم,موزريلا,ذرة ,كبيس, صويا\nFRIES+SAUCE",
       "prices": {
-        "TABLES": 4.44,
-        "TAKE_AWAY": 4.44
+        "TAKE_AWAY": 4.44,
+        "TABLES": 4.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/chicken-sub-sand.webp",
       "category_slug": "sandwiches",
@@ -343,12 +343,12 @@
       "name": "FRANCISCO SAND فرانسيسكو",
       "description": "فيلية دجاج,موزريلا, مايونيز,كبيس,خس,صويا",
       "prices": {
-        "TABLES": 4.44,
-        "TAKE_AWAY": 4.44
+        "TAKE_AWAY": 4.44,
+        "TABLES": 4.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "sandwiches",
@@ -363,12 +363,12 @@
       "name": "FAJITA SAND فاهيتا",
       "description": "صدر دجاج مشوي, فطر, فليفلة, بصل, صوص افوكا, موزريلا\nFRIES+SAUCE",
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/fahita.webp",
       "category_slug": "sandwiches",
@@ -383,12 +383,12 @@
       "name": "BONELESS BOMB بونليس بومب",
       "description": "3 CRISPY , 200G FRIED POTATO, WRANCH SAUCE, BBQ SAUCE, JALAPINO, CHEDDAR CHEESE",
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/img-20260605-wa0122_1.webp",
       "category_slug": "sandwiches",
@@ -403,12 +403,12 @@
       "name": "FAHITA BOMB",
       "description": null,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/fahita-bomb.webp",
       "category_slug": "sandwiches",
@@ -423,12 +423,12 @@
       "name": "RIZO SHRIMPS",
       "description": null,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/rizo-shrimps.webp",
       "category_slug": "sandwiches",
@@ -444,12 +444,12 @@
       "description": "Grilled chicken taco wrap, Argentina style.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/chicken-argentina.webp",
       "category_slug": "sandwiches",
@@ -465,12 +465,12 @@
       "description": "Boneless fried chicken in a taco wrap.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/boneless-wrap_1.webp",
       "category_slug": "sandwiches",
@@ -485,12 +485,12 @@
       "name": "CHICKEN MASTER",
       "description": null,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/chicken-master.webp",
       "category_slug": "sandwiches",
@@ -505,18 +505,18 @@
       "name": "بوكس القيصر",
       "description": null,
       "prices": {
-        "TABLES": 22.22,
-        "TAKE_AWAY": 16.66
+        "TAKE_AWAY": 16.66,
+        "TABLES": 22.22
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/1001766467.webp",
       "category_slug": "sandwiches",
       "is_available": true,
-      "is_featured": false,
-      "is_best_seller": false,
+      "is_featured": true,
+      "is_best_seller": true,
       "is_recommended": false,
       "is_spicy": false
     },
@@ -525,12 +525,12 @@
       "name": "PHILADELPHIA SAND فيلادلفيا",
       "description": "لحمة فيليه ,فطر,فليفلة ملونة,بصل,مايونيز, فونديل",
       "prices": {
-        "TABLES": 7,
-        "TAKE_AWAY": 7
+        "TAKE_AWAY": 7,
+        "TABLES": 7
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/philadelphia-sand.webp",
       "category_slug": "sandwiches",
@@ -565,12 +565,12 @@
       "description": "Large fattoush - garden vegetables with toasted bread and sumac dressing.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/fattouch.webp",
       "category_slug": "salad",
@@ -586,12 +586,12 @@
       "description": "Rocket leaf salad.",
       "description_generated": true,
       "prices": {
-        "TABLES": 4,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/rocca.webp",
       "category_slug": "salad",
@@ -607,12 +607,12 @@
       "description": "Large tabbouleh - parsley, tomato, onion and burghul with lemon.",
       "description_generated": true,
       "prices": {
-        "TABLES": 4,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/tabbouleh_2.webp",
       "category_slug": "salad",
@@ -628,12 +628,12 @@
       "description": "Caesar salad with parmesan and croutons.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "salad",
@@ -649,12 +649,12 @@
       "description": "Caesar salad topped with grilled chicken.",
       "description_generated": true,
       "prices": {
-        "TABLES": 7,
-        "TAKE_AWAY": 7
+        "TAKE_AWAY": 7,
+        "TABLES": 7
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/chicken-ceasar.webp",
       "category_slug": "salad",
@@ -670,12 +670,12 @@
       "description": "Crab salad.",
       "description_generated": true,
       "prices": {
-        "TABLES": 7.5,
-        "TAKE_AWAY": 7.5
+        "TAKE_AWAY": 7.5,
+        "TABLES": 7.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/crab-salad_1.webp",
       "category_slug": "salad",
@@ -690,12 +690,12 @@
       "name": "AMERICAN BURGER",
       "description": "Our Juicy Beef Patty 120 grs topped with cheddar cheese, Grilled tomatoes, Grilled onions, BBQ and Cocktail sauce\nFRIES + SAUCE",
       "prices": {
-        "TABLES": 4.44,
-        "TAKE_AWAY": 4.44
+        "TAKE_AWAY": 4.44,
+        "TABLES": 4.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/american-burger2.webp",
       "category_slug": "burgers",
@@ -710,12 +710,12 @@
       "name": "LEBANESE CHICKEN BURGER",
       "description": "Charcoal Grilled Chicken ,fresh tomatoes, Garlic, Pickles, Lettuce.",
       "prices": {
-        "TABLES": 4.44,
-        "TAKE_AWAY": 4.44
+        "TAKE_AWAY": 4.44,
+        "TABLES": 4.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/chicken-burger.webp",
       "category_slug": "burgers",
@@ -730,12 +730,12 @@
       "name": "LEBANESE BEEF BURGER",
       "description": "Our Juicy Beef Patty 120,Coleslaw, Fries, Ketchup, Mayo.\n3$ ADDED FOR COMBO (SAUCE+FRIES+PEPSI)",
       "prices": {
-        "TABLES": 4.44,
-        "TAKE_AWAY": 4.44
+        "TAKE_AWAY": 4.44,
+        "TABLES": 4.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/img-20260608-wa0041.webp",
       "category_slug": "burgers",
@@ -750,12 +750,12 @@
       "name": "ZINGER BURGER",
       "description": "3$ ADDED FOR COMBO (SAUCE+FRIES+PEPSI)",
       "prices": {
-        "TABLES": 4.44,
-        "TAKE_AWAY": 4.44
+        "TAKE_AWAY": 4.44,
+        "TABLES": 4.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/1001766468.webp",
       "category_slug": "burgers",
@@ -770,12 +770,12 @@
       "name": "Swiss Mushrooms Burger",
       "description": "Our juicy beef patty 150 grs, with freshly sauteed mushrooms and grilled onions, topped with melted swiss cheese and American mayonnaise\nFRIES + SAUCE",
       "prices": {
-        "TABLES": 7,
-        "TAKE_AWAY": 7
+        "TAKE_AWAY": 7,
+        "TABLES": 7
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "burgers",
@@ -790,12 +790,12 @@
       "name": "Thousand Island Burger",
       "description": "Served with fries and sauce",
       "prices": {
-        "TABLES": 7,
-        "TAKE_AWAY": 7
+        "TAKE_AWAY": 7,
+        "TABLES": 7
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/img-20260603-wa0145.webp",
       "category_slug": "burgers",
@@ -811,12 +811,12 @@
       "description": "Hummus - chickpeas blended with tahini and lemon.",
       "description_generated": true,
       "prices": {
-        "TABLES": 3.8,
-        "TAKE_AWAY": 3.5
+        "TAKE_AWAY": 3.5,
+        "TABLES": 3.8
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/hommos.webp",
       "category_slug": "cold-appetizer",
@@ -832,12 +832,12 @@
       "description": "Moutabbal - smoked aubergine with tahini.",
       "description_generated": true,
       "prices": {
-        "TABLES": 4,
-        "TAKE_AWAY": 3.5
+        "TAKE_AWAY": 3.5,
+        "TABLES": 4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/moutabbal.webp",
       "category_slug": "cold-appetizer",
@@ -852,12 +852,12 @@
       "name": "WARAK ENAB ورق عنب",
       "description": "8 حبات ورق عنب",
       "prices": {
-        "TABLES": 4.5,
-        "TAKE_AWAY": 4.5
+        "TAKE_AWAY": 4.5,
+        "TABLES": 4.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/warak-enab_1.webp",
       "category_slug": "cold-appetizer",
@@ -873,12 +873,12 @@
       "description": "Rakakat - fried cheese rolls.",
       "description_generated": true,
       "prices": {
-        "TABLES": 4,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/rakakat.webp",
       "category_slug": "hot-appetizer",
@@ -894,12 +894,12 @@
       "description": "Batata harra - fried potato cubes with coriander, garlic and chilli.",
       "description_generated": true,
       "prices": {
-        "TABLES": 4.5,
-        "TAKE_AWAY": 4.5
+        "TAKE_AWAY": 4.5,
+        "TABLES": 4.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/batata-harra.webp",
       "category_slug": "hot-appetizer",
@@ -915,12 +915,12 @@
       "description": "Sauteed chicken liver.",
       "description_generated": true,
       "prices": {
-        "TABLES": 6,
-        "TAKE_AWAY": 6
+        "TAKE_AWAY": 6,
+        "TABLES": 6
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "hot-appetizer",
@@ -936,12 +936,12 @@
       "description": "Fried kebbeh - stuffed burghul and minced meat croquettes.",
       "description_generated": true,
       "prices": {
-        "TABLES": 6.5,
-        "TAKE_AWAY": 6.5
+        "TAKE_AWAY": 6.5,
+        "TABLES": 6.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/kebbe.webp",
       "category_slug": "hot-appetizer",
@@ -957,12 +957,12 @@
       "description": "Fried shrimp.",
       "description_generated": true,
       "prices": {
-        "TABLES": 9.5,
-        "TAKE_AWAY": 9.5
+        "TAKE_AWAY": 9.5,
+        "TABLES": 9.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "hot-appetizer",
@@ -977,12 +977,12 @@
       "name": "صحن كفتة مشوي",
       "description": "سياخ كفتة 4, بندورة + بصل مشوي + كبيس+ 2 خبزة حرة",
       "prices": {
-        "TABLES": 9.44,
-        "TAKE_AWAY": 9.44
+        "TAKE_AWAY": 9.44,
+        "TABLES": 9.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-platers",
@@ -998,12 +998,12 @@
       "description": "12 grilled chicken wings.",
       "description_generated": true,
       "prices": {
-        "TABLES": 11.11,
-        "TAKE_AWAY": 6.66
+        "TAKE_AWAY": 6.66,
+        "TABLES": 11.11
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/whatsapp-image-2025-04-04-at-115559-am.webp",
       "category_slug": "grilled-platers",
@@ -1037,12 +1037,12 @@
       "name": "صحن طاووق احمر مشوي",
       "description": "اسياخ طاووق2 , خبزة متومة, ثوم , كبيس, بطاطا",
       "prices": {
-        "TABLES": 8,
-        "TAKE_AWAY": 8
+        "TAKE_AWAY": 8,
+        "TABLES": 8
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-platers",
@@ -1076,12 +1076,12 @@
       "name": "صحن لحمة مشوي",
       "description": "اسياخ لحمة 2, كبيس, بواز , بندورة,  خبزة حرة, حمص",
       "prices": {
-        "TABLES": 11.11,
-        "TAKE_AWAY": 11.11
+        "TAKE_AWAY": 11.11,
+        "TABLES": 11.11
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-platers",
@@ -1096,12 +1096,12 @@
       "name": "نص كيلو مشاوي مشكل",
       "description": "سيخ كفتة2 , 2 سيخ لحمة غنم, 2 سيخ طاووق ,بطاطا, خبزة حرة, ثوم, كبيس,  بندورة و بصل مشوي, بطاطا",
       "prices": {
-        "TABLES": 22,
-        "TAKE_AWAY": 22
+        "TAKE_AWAY": 22,
+        "TABLES": 22
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/kilo-mashewe-mshakkal.webp",
       "image_shared": true,
@@ -1117,12 +1117,12 @@
       "name": "كيلو لحم مشوي",
       "description": "اسياخ لحمة غنم 10, سيخ بصل, سيخ بندورة,  كبيس, خبزة  حرة, حمص",
       "prices": {
-        "TABLES": 44.4,
-        "TAKE_AWAY": 44.4
+        "TAKE_AWAY": 44.4,
+        "TABLES": 44.4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-platers",
@@ -1137,12 +1137,12 @@
       "name": "كيلو طاووق  احمر مشوي",
       "description": "اسياخ طاووق 10, بطاطا,2 ثوم , 1 صوص حار, كبيس, 1 خبز متوم",
       "prices": {
-        "TABLES": 25,
-        "TAKE_AWAY": 25
+        "TAKE_AWAY": 25,
+        "TABLES": 25
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-platers",
@@ -1157,12 +1157,12 @@
       "name": "فروج عالفحم",
       "description": "ثوم2 , كبيس 2, صوص حار2, بطاطا",
       "prices": {
-        "TABLES": 14.44,
-        "TAKE_AWAY": 14.44
+        "TAKE_AWAY": 14.44,
+        "TABLES": 14.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/farouj-fahem.webp",
       "category_slug": "grilled-platers",
@@ -1177,12 +1177,12 @@
       "name": "نصف فروج عالفحم",
       "description": "بطاطا 200 غرام, كبيس,ثوم, صوص حار",
       "prices": {
-        "TABLES": 7.22,
-        "TAKE_AWAY": 8.33
+        "TAKE_AWAY": 8.33,
+        "TABLES": 7.22
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/nos-fahem.webp",
       "category_slug": "grilled-platers",
@@ -1197,12 +1197,12 @@
       "name": "كيلو كفتة مشوي",
       "description": "اسياخ كفتة  20, سيخ بصل, سيخ بندورة, كبيس, خبزة  حرة, بواز",
       "prices": {
-        "TABLES": 35,
-        "TAKE_AWAY": 35
+        "TAKE_AWAY": 35,
+        "TABLES": 35
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-platers",
@@ -1217,12 +1217,12 @@
       "name": "كيلو مشاوي مشكل",
       "description": ",بطاطا,اسياخ لحمة غنم 4, 4اسياخ طاووق,4 اسياخ كفتة, بواز, ثوم, سيخ بندورة, سيخ بصل,كبيس",
       "prices": {
-        "TABLES": 40,
-        "TAKE_AWAY": 40
+        "TAKE_AWAY": 40,
+        "TABLES": 40
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/kilo-mashewe-mshakkal.webp",
       "category_slug": "grilled-platers",
@@ -1237,12 +1237,12 @@
       "name": "صحن كباب مشوي",
       "description": "بندورة + بصل مشوي + كبيس+ 2 خبزة حرة\n, 4 اسياخ كباب",
       "prices": {
-        "TABLES": 9,
-        "TAKE_AWAY": 9
+        "TAKE_AWAY": 9,
+        "TABLES": 9
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-platers",
@@ -1257,12 +1257,12 @@
       "name": "كيلو كباب مشوي",
       "description": "اسياخ كباب 20, سيخ بصل, سيخ بندورة, كبيس, خبزة  حرة, بواز",
       "prices": {
-        "TABLES": 35,
-        "TAKE_AWAY": 35
+        "TAKE_AWAY": 35,
+        "TABLES": 35
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-platers",
@@ -1278,12 +1278,12 @@
       "description": "Mixed grill plate.",
       "description_generated": true,
       "prices": {
-        "TABLES": 12,
-        "TAKE_AWAY": 12
+        "TAKE_AWAY": 12,
+        "TABLES": 12
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/sahen-mashewe-mix.webp",
       "category_slug": "grilled-platers",
@@ -1299,12 +1299,12 @@
       "description": "Gas-grilled chicken with rice and fries.",
       "description_generated": true,
       "prices": {
-        "TABLES": 11.11,
-        "TAKE_AWAY": 11.11
+        "TAKE_AWAY": 11.11,
+        "TABLES": 11.11
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/farouj-8az.webp",
       "category_slug": "grilled-platers",
@@ -1320,12 +1320,12 @@
       "description": "Half a kilo of grilled meat skewers.",
       "description_generated": true,
       "prices": {
-        "TABLES": 24.44,
-        "TAKE_AWAY": 24.44
+        "TAKE_AWAY": 24.44,
+        "TABLES": 24.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-platers",
@@ -1341,12 +1341,12 @@
       "description": "Clove-spiced kebab skewers, grilled.",
       "description_generated": true,
       "prices": {
-        "TABLES": 9.44,
-        "TAKE_AWAY": 9.44
+        "TAKE_AWAY": 9.44,
+        "TABLES": 9.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-platers",
@@ -1361,12 +1361,12 @@
       "name": "سندويش طاووق احمر مشوي",
       "description": "ثوم, بطاطا, كبيس",
       "prices": {
-        "TABLES": 4,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-sandwiches",
@@ -1382,12 +1382,12 @@
       "description": "Grilled kofta sandwich.",
       "description_generated": true,
       "prices": {
-        "TABLES": 4,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-sandwiches",
@@ -1403,12 +1403,12 @@
       "description": "Grilled kebab sandwich.",
       "description_generated": true,
       "prices": {
-        "TABLES": 4,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-sandwiches",
@@ -1423,12 +1423,12 @@
       "name": "سندويش لحمة مشوية",
       "description": "سيخ لحمة,بندورة مشوية, بصل مشوي,حمص, بواز",
       "prices": {
-        "TABLES": 4.44,
-        "TAKE_AWAY": 4.44
+        "TAKE_AWAY": 4.44,
+        "TABLES": 4.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-sandwiches",
@@ -1443,12 +1443,12 @@
       "name": "سندويش فروج مشوي فحم",
       "description": "ثوم, كبيس,100غرام دجاج,صوص حار",
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "grilled-sandwiches",
@@ -1464,12 +1464,12 @@
       "description": "Fresh lemonade.",
       "description_generated": true,
       "prices": {
-        "TABLES": 2.5,
-        "TAKE_AWAY": 2.5
+        "TAKE_AWAY": 2.5,
+        "TABLES": 2.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "cold-drinks",
@@ -1485,12 +1485,12 @@
       "description": "Fresh lemonade blended with mint.",
       "description_generated": true,
       "prices": {
-        "TABLES": 3,
-        "TAKE_AWAY": 3
+        "TAKE_AWAY": 3,
+        "TABLES": 3
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/minted-lemonade.webp",
       "category_slug": "cold-drinks",
@@ -1506,12 +1506,12 @@
       "description": "Freshly squeezed orange juice.",
       "description_generated": true,
       "prices": {
-        "TABLES": 3,
-        "TAKE_AWAY": 3
+        "TAKE_AWAY": 3,
+        "TABLES": 3
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "cold-drinks",
@@ -1527,12 +1527,12 @@
       "description": "Freshly pressed carrot juice.",
       "description_generated": true,
       "prices": {
-        "TABLES": 3,
-        "TAKE_AWAY": 3
+        "TAKE_AWAY": 3,
+        "TABLES": 3
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "cold-drinks",
@@ -1547,12 +1547,12 @@
       "name": "COCKTAIL JUICE",
       "description": "FRUITS COCKTAIL JUICE",
       "prices": {
-        "TABLES": 4,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/strawberry-juice_1.webp",
       "category_slug": "cold-drinks",
@@ -1568,12 +1568,12 @@
       "description": "Mango juice.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "cold-drinks",
@@ -1607,12 +1607,12 @@
       "description": "Small Turkish coffee.",
       "description_generated": true,
       "prices": {
-        "TABLES": 2,
-        "TAKE_AWAY": 2
+        "TAKE_AWAY": 2,
+        "TABLES": 2
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "hot-drinks",
@@ -1628,12 +1628,12 @@
       "description": "Pot of tea.",
       "description_generated": true,
       "prices": {
-        "TABLES": 1.27,
-        "TAKE_AWAY": 1.27
+        "TAKE_AWAY": 1.27,
+        "TABLES": 1.27
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "hot-drinks",
@@ -1649,12 +1649,12 @@
       "description": "Single shot of espresso.",
       "description_generated": true,
       "prices": {
-        "TABLES": 1.5,
-        "TAKE_AWAY": 1.5
+        "TAKE_AWAY": 1.5,
+        "TABLES": 1.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "hot-drinks",
@@ -1670,12 +1670,12 @@
       "description": "Double shot of espresso.",
       "description_generated": true,
       "prices": {
-        "TABLES": 2,
-        "TAKE_AWAY": 2
+        "TAKE_AWAY": 2,
+        "TABLES": 2
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "hot-drinks",
@@ -1691,12 +1691,12 @@
       "description": "Espresso with steamed milk.",
       "description_generated": true,
       "prices": {
-        "TABLES": 3.5,
-        "TAKE_AWAY": 3.5
+        "TAKE_AWAY": 3.5,
+        "TABLES": 3.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "hot-drinks",
@@ -1712,12 +1712,12 @@
       "description": "Espresso with chocolate and steamed milk.",
       "description_generated": true,
       "prices": {
-        "TABLES": 3.5,
-        "TAKE_AWAY": 3.5
+        "TAKE_AWAY": 3.5,
+        "TABLES": 3.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "hot-drinks",
@@ -1733,12 +1733,12 @@
       "description": "Instant coffee, served hot.",
       "description_generated": true,
       "prices": {
-        "TABLES": 2,
-        "TAKE_AWAY": 2
+        "TAKE_AWAY": 2,
+        "TABLES": 2
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "hot-drinks",
@@ -1754,12 +1754,12 @@
       "description": "Espresso with steamed milk and foam.",
       "description_generated": true,
       "prices": {
-        "TABLES": 2.5,
-        "TAKE_AWAY": 2.5
+        "TAKE_AWAY": 2.5,
+        "TABLES": 2.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "hot-drinks",
@@ -2060,12 +2060,12 @@
       "description": "Extra burger patty.",
       "description_generated": true,
       "prices": {
-        "TABLES": 2,
-        "TAKE_AWAY": 2
+        "TAKE_AWAY": 2,
+        "TABLES": 2
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "extras",
@@ -2081,12 +2081,12 @@
       "description": "Extra cheddar cheese.",
       "description_generated": true,
       "prices": {
-        "TABLES": 0.75,
-        "TAKE_AWAY": 1.5
+        "TAKE_AWAY": 1.5,
+        "TABLES": 0.75
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "extras",
@@ -2102,12 +2102,12 @@
       "description": "Extra mozzarella cheese.",
       "description_generated": true,
       "prices": {
-        "TABLES": 0.75,
-        "TAKE_AWAY": 0.75
+        "TAKE_AWAY": 0.75,
+        "TABLES": 0.75
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "extras",
@@ -2123,12 +2123,12 @@
       "description": "Extra pickles.",
       "description_generated": true,
       "prices": {
-        "TABLES": 0.75,
-        "TAKE_AWAY": 0.75
+        "TAKE_AWAY": 0.75,
+        "TABLES": 0.75
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "extras",
@@ -2144,12 +2144,12 @@
       "description": "Extra jalapeno.",
       "description_generated": true,
       "prices": {
-        "TABLES": 0.75,
-        "TAKE_AWAY": 0.75
+        "TAKE_AWAY": 0.75,
+        "TABLES": 0.75
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "extras",
@@ -2165,12 +2165,12 @@
       "description": "Pizza margherita - tomato, mozzarella and basil.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "pizza",
@@ -2186,12 +2186,12 @@
       "description": "Vegetarian pizza with mixed vegetables.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "pizza",
@@ -2207,12 +2207,12 @@
       "description": "Pepperoni pizza with mozzarella.",
       "description_generated": true,
       "prices": {
-        "TABLES": 7,
-        "TAKE_AWAY": 7
+        "TAKE_AWAY": 7,
+        "TABLES": 7
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "pizza",
@@ -2227,12 +2227,12 @@
       "name": "سندويش شاورما لحمة",
       "description": "طرطور, بواز,بندورة",
       "prices": {
-        "TABLES": 4,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/1001766469.webp",
       "category_slug": "shawarma",
@@ -2247,12 +2247,12 @@
       "name": "سندويش شاورما دجاج",
       "description": "ثوم , كبيس",
       "prices": {
-        "TABLES": 2.77,
-        "TAKE_AWAY": 2.77
+        "TAKE_AWAY": 2.77,
+        "TABLES": 2.77
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/img-20260605-wa0111.webp",
       "category_slug": "shawarma",
@@ -2267,12 +2267,12 @@
       "name": "وجبة شاورما لحمة",
       "description": "شاورما لحمة 200  غرام,بواز, طرطور,شرحات بندورة,كبيس, بطاطا",
       "prices": {
-        "TABLES": 11.11,
-        "TAKE_AWAY": 11.11
+        "TAKE_AWAY": 11.11,
+        "TABLES": 11.11
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/shawarma-lahme-wajbe.webp",
       "category_slug": "shawarma",
@@ -2287,12 +2287,12 @@
       "name": "وجبة شاورما دجاج",
       "description": ",شاورما دجاج 200 غرام,بطاطا,  ثوم , كبيس",
       "prices": {
-        "TABLES": 7,
-        "TAKE_AWAY": 7.77
+        "TAKE_AWAY": 7.77,
+        "TABLES": 7
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/shawarma-wajbe.webp",
       "category_slug": "shawarma",
@@ -2307,12 +2307,12 @@
       "name": "مرقوق شاورما  دجاج",
       "description": "ثوم, كبيس, بطاطا",
       "prices": {
-        "TABLES": 4.44,
-        "TAKE_AWAY": 4.44
+        "TAKE_AWAY": 4.44,
+        "TABLES": 4.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/1001765734.webp",
       "category_slug": "shawarma",
@@ -2328,12 +2328,12 @@
       "description": "Chicken shawarma markouk wrap meal, Al Qaysr style.",
       "description_generated": true,
       "prices": {
-        "TABLES": 7.22,
-        "TAKE_AWAY": 7.22
+        "TAKE_AWAY": 7.22,
+        "TABLES": 7.22
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/img-20260605-wa0137.webp",
       "category_slug": "shawarma",
@@ -2349,12 +2349,12 @@
       "description": "Beef shawarma in markouk bread.",
       "description_generated": true,
       "prices": {
-        "TABLES": 6,
-        "TAKE_AWAY": 6
+        "TAKE_AWAY": 6,
+        "TABLES": 6
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/1001765735.webp",
       "category_slug": "shawarma",
@@ -2369,12 +2369,12 @@
       "name": "وجبة مرقوق شاورما لحمة القيصر",
       "description": "بطاطا, شاورما, ثوم,كبيس",
       "prices": {
-        "TABLES": 9.5,
-        "TAKE_AWAY": 8.33
+        "TAKE_AWAY": 8.33,
+        "TABLES": 9.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "shawarma",
@@ -2390,12 +2390,12 @@
       "description": "Half a kilo of beef shawarma.",
       "description_generated": true,
       "prices": {
-        "TABLES": 24.44,
-        "TAKE_AWAY": 24.44
+        "TAKE_AWAY": 24.44,
+        "TABLES": 24.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "shawarma",
@@ -2411,12 +2411,12 @@
       "description": "Chicken doner.",
       "description_generated": true,
       "prices": {
-        "TABLES": 4.44,
-        "TAKE_AWAY": 4.44
+        "TAKE_AWAY": 4.44,
+        "TABLES": 4.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/doner-chicken.webp",
       "category_slug": "shawarma",
@@ -2432,12 +2432,12 @@
       "description": "Beef doner.",
       "description_generated": true,
       "prices": {
-        "TABLES": 6.66,
-        "TAKE_AWAY": 6.66
+        "TAKE_AWAY": 6.66,
+        "TABLES": 6.66
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/1001766470.webp",
       "category_slug": "shawarma",
@@ -2453,12 +2453,12 @@
       "description": "One kilo of chicken shawarma.",
       "description_generated": true,
       "prices": {
-        "TABLES": 22.22,
-        "TAKE_AWAY": 20
+        "TAKE_AWAY": 20,
+        "TABLES": 22.22
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "shawarma",
@@ -2473,12 +2473,12 @@
       "name": "RIZO SHAWARMA",
       "description": null,
       "prices": {
-        "TABLES": 4,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/rizo-shawarma.webp",
       "category_slug": "shawarma",
@@ -2493,12 +2493,12 @@
       "name": "نص كيلو شاورما دجاج+ بطاطا",
       "description": "ثوم و كبيس",
       "prices": {
-        "TABLES": 12.22,
-        "TAKE_AWAY": 12.22
+        "TAKE_AWAY": 12.22,
+        "TABLES": 12.22
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/img-20250625-wa0144.webp",
       "category_slug": "shawarma",
@@ -2513,12 +2513,12 @@
       "name": "BROASTED (4PCS) بروستد (4 قطع)",
       "description": "سلطة مايونيز, كبيس, بطاطا , ثوم",
       "prices": {
-        "TABLES": 7.22,
-        "TAKE_AWAY": 8.33
+        "TAKE_AWAY": 8.33,
+        "TABLES": 7.22
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/8-broasted.webp",
       "image_shared": true,
@@ -2534,12 +2534,12 @@
       "name": "BROASTED (8 PCS) بروستد 8 قطع",
       "description": "سلطة مايونيز2, كبيس2, بطاطا 320 غرام , ثوم,2 صوص حر",
       "prices": {
-        "TABLES": 14.44,
-        "TAKE_AWAY": 14.44
+        "TAKE_AWAY": 14.44,
+        "TABLES": 14.44
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/8-broasted.webp",
       "category_slug": "broasted",
@@ -2555,12 +2555,12 @@
       "description": "3 pieces of crispy fried chicken.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5.55,
-        "TAKE_AWAY": 5.55
+        "TAKE_AWAY": 5.55,
+        "TABLES": 5.55
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/3-crispy.webp",
       "category_slug": "broasted",
@@ -2575,12 +2575,12 @@
       "name": "CRISPY MEAL (5PCS)  وجبة كرسبي (5 قطع)",
       "description": "كرسبي, بطاطا, سلطة مايونيز, ثوم, كبيس",
       "prices": {
-        "TABLES": 10,
-        "TAKE_AWAY": 7.77
+        "TAKE_AWAY": 7.77,
+        "TABLES": 10
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/5-crispy_2.webp",
       "category_slug": "broasted",
@@ -2596,12 +2596,12 @@
       "description": "10 pieces of crispy fried chicken.",
       "description_generated": true,
       "prices": {
-        "TABLES": 16.66,
-        "TAKE_AWAY": 13.33
+        "TAKE_AWAY": 13.33,
+        "TABLES": 16.66
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/10-crispy.webp",
       "category_slug": "broasted",
@@ -2617,12 +2617,12 @@
       "description": "Plate of kabsa rice.",
       "description_generated": true,
       "prices": {
-        "TABLES": 4,
-        "TAKE_AWAY": 4
+        "TAKE_AWAY": 4,
+        "TABLES": 4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/kabse-rice.webp",
       "category_slug": "main-course",
@@ -2638,12 +2638,12 @@
       "description": "Fettuccine pasta.",
       "description_generated": true,
       "prices": {
-        "TABLES": 9,
-        "TAKE_AWAY": 9
+        "TAKE_AWAY": 9,
+        "TABLES": 9
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/fettuccini_1.webp",
       "category_slug": "main-course",
@@ -2659,12 +2659,12 @@
       "description": "Escalope plate.",
       "description_generated": true,
       "prices": {
-        "TABLES": 13,
-        "TAKE_AWAY": 13
+        "TAKE_AWAY": 13,
+        "TABLES": 13
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "main-course",
@@ -2680,12 +2680,12 @@
       "description": "Chicken in mushroom sauce.",
       "description_generated": true,
       "prices": {
-        "TABLES": 13,
-        "TAKE_AWAY": 13
+        "TAKE_AWAY": 13,
+        "TABLES": 13
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/chicken-mushroom-plate.webp",
       "category_slug": "main-course",
@@ -2700,12 +2700,12 @@
       "name": "SWISS MUSHROOM STEAK",
       "description": "200 G Of Grilled Steak With Mushroom Sauce Served With Fries And Sautéed Veggies",
       "prices": {
-        "TABLES": 15,
-        "TAKE_AWAY": 15
+        "TAKE_AWAY": 15,
+        "TABLES": 15
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/beef-mushroom-plate.webp",
       "category_slug": "main-course",
@@ -2721,12 +2721,12 @@
       "description": "Chicken alfredo.",
       "description_generated": true,
       "prices": {
-        "TABLES": 15,
-        "TAKE_AWAY": 15
+        "TAKE_AWAY": 15,
+        "TABLES": 15
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": "/menu/polo-chicken-alfredo.webp",
       "category_slug": "main-course",
@@ -2742,12 +2742,12 @@
       "description": "Kabsa rice with chicken, mansaf platter for 15.",
       "description_generated": true,
       "prices": {
-        "TABLES": 60,
-        "TAKE_AWAY": 60
+        "TAKE_AWAY": 60,
+        "TABLES": 60
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "main-course",
@@ -2763,12 +2763,12 @@
       "description": "Lamb kabsa rice with meat, mansaf platter for 15.",
       "description_generated": true,
       "prices": {
-        "TABLES": 80,
-        "TAKE_AWAY": 80
+        "TAKE_AWAY": 80,
+        "TABLES": 80
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "main-course",
@@ -3173,12 +3173,12 @@
       "name": "SHAWARMA BOX",
       "description": "4 shawarma chicken\n4 shawarma beef\n4 shawarma doner",
       "prices": {
-        "TABLES": 16.66,
-        "TAKE_AWAY": 16.66
+        "TAKE_AWAY": 16.66,
+        "TABLES": 16.66
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "offers",
@@ -3194,12 +3194,12 @@
       "description": "Chilled canned soft drink.",
       "description_generated": true,
       "prices": {
-        "TABLES": 1.11,
-        "TAKE_AWAY": 1.11
+        "TAKE_AWAY": 1.11,
+        "TABLES": 1.11
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "soft-drinks",
@@ -3215,12 +3215,12 @@
       "description": "Chilled can of Pepsi Diet.",
       "description_generated": true,
       "prices": {
-        "TABLES": 1.11,
-        "TAKE_AWAY": 1.11
+        "TAKE_AWAY": 1.11,
+        "TABLES": 1.11
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "soft-drinks",
@@ -3236,12 +3236,12 @@
       "description": "Chilled can of 7UP.",
       "description_generated": true,
       "prices": {
-        "TABLES": 1.11,
-        "TAKE_AWAY": 1.11
+        "TAKE_AWAY": 1.11,
+        "TABLES": 1.11
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "soft-drinks",
@@ -3257,12 +3257,12 @@
       "description": "Chilled can of 7UP Diet.",
       "description_generated": true,
       "prices": {
-        "TABLES": 1.11,
-        "TAKE_AWAY": 1.11
+        "TAKE_AWAY": 1.11,
+        "TABLES": 1.11
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "soft-drinks",
@@ -3278,12 +3278,12 @@
       "description": "Chilled can of Mirinda.",
       "description_generated": true,
       "prices": {
-        "TABLES": 1.11,
-        "TAKE_AWAY": 1.11
+        "TAKE_AWAY": 1.11,
+        "TABLES": 1.11
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "soft-drinks",
@@ -3299,12 +3299,12 @@
       "description": "Small bottle of still water.",
       "description_generated": true,
       "prices": {
-        "TABLES": 0.5,
-        "TAKE_AWAY": 0.5
+        "TAKE_AWAY": 0.5,
+        "TABLES": 0.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "soft-drinks",
@@ -3320,12 +3320,12 @@
       "description": "Large bottle of still water.",
       "description_generated": true,
       "prices": {
-        "TABLES": 1.5,
-        "TAKE_AWAY": 1.5
+        "TAKE_AWAY": 1.5,
+        "TABLES": 1.5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "soft-drinks",
@@ -3341,12 +3341,12 @@
       "description": "Bottle of sparkling water.",
       "description_generated": true,
       "prices": {
-        "TABLES": 2,
-        "TAKE_AWAY": 2
+        "TAKE_AWAY": 2,
+        "TABLES": 2
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "soft-drinks",
@@ -3362,12 +3362,12 @@
       "description": "Ayran - chilled salted yoghurt drink.",
       "description_generated": true,
       "prices": {
-        "TABLES": 1.11,
-        "TAKE_AWAY": 1.11
+        "TAKE_AWAY": 1.11,
+        "TABLES": 1.11
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "soft-drinks",
@@ -3383,12 +3383,12 @@
       "description": "Chilled canned energy drink.",
       "description_generated": true,
       "prices": {
-        "TABLES": 3,
-        "TAKE_AWAY": 3
+        "TAKE_AWAY": 3,
+        "TABLES": 3
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "soft-drinks",
@@ -3404,12 +3404,12 @@
       "description": "Chilled canned energy drink.",
       "description_generated": true,
       "prices": {
-        "TABLES": 1.4,
-        "TAKE_AWAY": 1.4
+        "TAKE_AWAY": 1.4,
+        "TABLES": 1.4
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "soft-drinks",
@@ -3425,12 +3425,12 @@
       "description": "Crepe filled with Nutella.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "m-dessert",
@@ -3446,12 +3446,12 @@
       "description": "Crepe filled with white chocolate.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "m-dessert",
@@ -3467,12 +3467,12 @@
       "description": "Crepe filled with Lotus spread.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "m-dessert",
@@ -3488,12 +3488,12 @@
       "description": "Crepe filled with crushed Oreo.",
       "description_generated": true,
       "prices": {
-        "TABLES": 5,
-        "TAKE_AWAY": 5
+        "TAKE_AWAY": 5,
+        "TABLES": 5
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "m-dessert",
@@ -3509,12 +3509,12 @@
       "description": "Crepe filled with pistachio cream.",
       "description_generated": true,
       "prices": {
-        "TABLES": 7,
-        "TAKE_AWAY": 7
+        "TAKE_AWAY": 7,
+        "TABLES": 7
       },
       "menus": [
-        "TABLES",
-        "TAKE_AWAY"
+        "TAKE_AWAY",
+        "TABLES"
       ],
       "image_url": null,
       "category_slug": "m-dessert",

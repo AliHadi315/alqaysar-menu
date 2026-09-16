@@ -35,7 +35,10 @@ try {
     db.from("restaurants").select("*").limit(1).maybeSingle(),
     db.from("categories").select("*").eq("is_active", true).order("display_order"),
     db.from("menu_items").select("*, categories(slug), menu_item_prices(menu_type, price)")
-      .eq("is_active", true).order("display_order"),
+      .eq("is_active", true).order("display_order")
+      // Postgres returns the nested price rows in no fixed order, which made
+      // menu.json churn between builds. Order them so the file is stable.
+      .order("menu_type", { referencedTable: "menu_item_prices" }),
   ]);
 
   for (const r of [restaurant, categories, items]) if (r.error) throw new Error(r.error.message);
