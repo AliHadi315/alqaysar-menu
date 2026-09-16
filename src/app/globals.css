@@ -1,0 +1,668 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #14110f;
+  --color-ink-soft: #3d3631;
+  --color-muted: #796f67;
+  --color-gold: #b08a3e;
+  /* Gold text on a light background: #b08a3e is only 3.0:1, this is 4.6:1. */
+  --color-gold-text: #8a6c31;
+  --color-gold-soft: #e7d9bd;
+  --color-ivory: #faf7f2;
+  --color-surface: #ffffff;
+  --color-line: #e8e1d6;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+html { scroll-behavior: smooth; }
+
+/* Tailwind v4 resets buttons to cursor:default; interactive elements should
+   read as clickable. */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]),
+summary,
+label[for] {
+  cursor: pointer;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scroll reveal. Scoped to .js so nothing is hidden without JavaScript, and
+   switched off entirely for anyone who asked for less motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    filter: blur(8px);
+    transition:
+      opacity 0.6s ease-out,
+      transform 0.6s ease-out,
+      filter 0.6s ease-out;
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  .js .reveal-noblur {
+    filter: none;
+  }
+
+  .js .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .js .order-bar-enter {
+    animation: order-bar-in 0.35s ease-out both;
+  }
+}
+
+@keyframes order-bar-in {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Card hover. Gated on a real pointer so a tap on a phone does not leave the
+   card stuck in its hover state, and on motion preference for the movement. */
+@media (hover: hover) and (pointer: fine) {
+  .menu-card {
+    transition:
+      box-shadow 0.35s ease,
+      transform 0.35s ease;
+  }
+
+  .menu-card:hover {
+    box-shadow: 0 20px 40px -24px rgba(20, 17, 15, 0.55);
+  }
+
+  .menu-card:hover .menu-card-frame {
+    border-color: var(--color-gold);
+  }
+
+  .menu-card-img {
+    transition: transform 0.6s ease;
+  }
+
+  .menu-row {
+    transition: background-color 0.25s ease;
+  }
+
+  .menu-row:hover {
+    background-color: color-mix(in srgb, var(--color-gold-soft) 35%, transparent);
+  }
+
+  .menu-row:hover .menu-row-name {
+    color: var(--color-gold-text);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .menu-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .menu-card:hover .menu-card-img {
+    transform: scale(1.06);
+  }
+
+  .menu-card:hover .menu-card-cta {
+    transform: scale(1.1);
+  }
+
+  .menu-card-cta {
+    transition:
+      transform 0.3s ease,
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+}
+
+/* Take Away / Tables choice cards. */
+.choice-card {
+  transition:
+    box-shadow 0.4s ease,
+    transform 0.4s ease,
+    border-color 0.3s ease;
+}
+
+.choice-img,
+.choice-scrim,
+.choice-cta {
+  transition:
+    transform 0.6s ease,
+    opacity 0.35s ease,
+    background 0.4s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  /* Only hide the call to action where a pointer can reveal it again;
+     on a touch screen there is no hover, so it must stay visible. */
+  .choice-cta {
+    opacity: 0;
+  }
+
+  .choice-card:hover {
+    border-color: var(--color-gold);
+    box-shadow: 0 26px 50px -28px rgba(20, 17, 15, 0.7);
+  }
+
+  .choice-card:hover .choice-cta {
+    opacity: 1;
+  }
+
+  .choice-card:hover .choice-scrim {
+    background: linear-gradient(
+      to top,
+      color-mix(in srgb, var(--color-ink) 96%, transparent),
+      color-mix(in srgb, var(--color-ink) 70%, transparent),
+      color-mix(in srgb, var(--color-ink) 35%, transparent)
+    );
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .choice-cta {
+    transform: translateY(8px);
+  }
+
+  .choice-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .choice-card:hover .choice-img {
+    transform: scale(1.08);
+  }
+
+  .choice-card:hover .choice-cta {
+    transform: none;
+  }
+}
+
+/* Order bar controls. */
+.qty-btn,
+.send-btn,
+.review-btn,
+.clear-btn {
+  transition:
+    transform 0.2s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Press feedback works on touch as well as mouse, so it is not hover-gated. */
+@media (prefers-reduced-motion: no-preference) {
+  .qty-btn:active,
+  .send-btn:active {
+    transform: scale(0.94);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .qty-btn:hover {
+    border-color: var(--color-ink);
+    background-color: var(--color-ink);
+    color: var(--color-ivory);
+  }
+
+  .send-btn:hover {
+    box-shadow: 0 12px 24px -12px rgba(37, 211, 102, 0.8);
+    filter: brightness(0.96);
+  }
+
+  .review-btn:hover .review-total {
+    color: var(--color-gold-text);
+  }
+
+  .clear-btn:hover {
+    color: #b91c1c;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .qty-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .send-btn:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Header and footer links: a rule that wipes in from the reading-start edge. */
+.link-underline {
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s ease;
+}
+
+/* Arabic reads right to left, so the rule has to grow the other way. */
+[dir="rtl"] .link-underline::after {
+  transform-origin: right center;
+}
+
+.brand-logo,
+.lang-btn {
+  transition:
+    transform 0.3s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.brand-name {
+  transition: color 0.25s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link-underline:hover {
+    color: var(--color-gold-text);
+  }
+
+  .link-underline:hover::after {
+    transform: scaleX(1);
+  }
+
+  .brand:hover .brand-name {
+    color: var(--color-gold-text);
+  }
+
+  .lang-btn:hover {
+    border-color: var(--color-gold);
+    background-color: color-mix(in srgb, var(--color-gold-soft) 45%, transparent);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .brand:hover .brand-logo {
+    transform: scale(1.07);
+  }
+
+  .lang-btn:hover {
+    transform: translateY(-1px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline::after {
+    transition: none;
+  }
+}
+
+/* Search field and the sticky category rail. */
+.search-field {
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Focus is not hover-gated: it has to work for touch and keyboard too. */
+.search-field:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-gold-soft) 55%, transparent);
+}
+
+.cat-chip {
+  transition:
+    transform 0.2s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cat-chip:active {
+    transform: scale(0.95);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .search-field:hover:not(:focus) {
+    border-color: color-mix(in srgb, var(--color-gold) 55%, var(--color-line));
+  }
+
+  .cat-chip:hover {
+    border-color: var(--color-ink);
+    background-color: var(--color-ink);
+    color: var(--color-ivory);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .cat-chip:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Dish dialog buttons. */
+.dialog-close,
+.dialog-add {
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dialog-close:active,
+  .dialog-add:active {
+    transform: scale(0.96);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .dialog-close:hover {
+    background-color: var(--color-ink);
+    color: var(--color-ivory);
+  }
+
+  .dialog-add:hover {
+    background-color: var(--color-gold);
+    color: var(--color-ink);
+    box-shadow: 0 14px 28px -14px rgba(176, 138, 62, 0.9);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .dialog-close:hover {
+    transform: rotate(90deg);
+  }
+
+  .dialog-add:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Hero call to action. */
+.hero-cta {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.3s ease,
+    filter 0.25s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-cta:active {
+    transform: scale(0.97);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hero-cta:hover {
+    filter: brightness(1.08);
+    box-shadow: 0 18px 36px -14px rgba(176, 138, 62, 0.75);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .hero-cta:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* Find us: map frame and its buttons. */
+.map-hint {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* There is no hover on touch, so the hint must be visible there. */
+@media not all and (hover: hover) {
+  .map-hint {
+    opacity: 1;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .visit-map:hover .map-hint {
+    opacity: 1;
+  }
+}
+
+.map-hint {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* No hover on touch, so the hint has to be visible there. */
+@media not all and (hover: hover) {
+  .map-hint {
+    opacity: 1;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .visit-map:hover .map-hint {
+    opacity: 1;
+  }
+}
+
+.visit-map {
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.visit-btn {
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .visit-btn:active {
+    transform: scale(0.96);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  /* Border and shadow only: the map is a live iframe, and transforming its
+     container forces a repaint that stutters while panning. */
+  .visit-map:hover {
+    border-color: var(--color-gold);
+    box-shadow: 0 20px 40px -24px rgba(20, 17, 15, 0.5);
+  }
+
+  .visit-btn:hover {
+    border-color: var(--color-ink);
+    background-color: var(--color-ink);
+    color: var(--color-ivory);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .visit-btn:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* ---------------------------------------------------------------- admin
+   The owner's panel. Same ink/gold identity as the site so it feels like
+   their own, but denser and plainer. Every control is at least 44px. */
+.a-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  border-radius: 0.5rem;
+  padding-inline: 1rem;
+  font-size: 0.875rem;
+  border: 1px solid transparent;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.a-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-gold-soft) 70%, transparent);
+}
+
+.a-btn:disabled {
+  opacity: 0.55;
+}
+
+.a-btn-primary {
+  background: var(--color-ink);
+  color: var(--color-ivory);
+}
+
+.a-btn-ghost {
+  border-color: var(--color-line);
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+.a-btn-danger {
+  border-color: var(--color-line);
+  background: var(--color-surface);
+  color: #b91c1c;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .a-btn:not(:disabled):active {
+    transform: scale(0.97);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .a-btn-primary:not(:disabled):hover {
+    background: var(--color-gold);
+    color: var(--color-ink);
+  }
+
+  .a-btn-ghost:not(:disabled):hover {
+    border-color: var(--color-ink);
+    background: var(--color-ink);
+    color: var(--color-ivory);
+  }
+
+  .a-btn-danger:not(:disabled):hover {
+    border-color: #b91c1c;
+    background: #fef2f2;
+  }
+
+  .a-row:hover {
+    background: color-mix(in srgb, var(--color-gold-soft) 22%, transparent);
+  }
+}
+
+.a-row {
+  transition: background-color 0.2s ease;
+}
+
+.a-input {
+  min-height: 2.75rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-line);
+  padding-inline: 0.75rem;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.a-input:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-gold-soft) 55%, transparent);
+}
+
+/* Skeleton rows while the menu loads, so the panel never sits blank. */
+.a-skeleton {
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    90deg,
+    var(--color-line) 25%,
+    color-mix(in srgb, var(--color-line) 45%, white) 50%,
+    var(--color-line) 75%
+  );
+  background-size: 200% 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .a-skeleton {
+    animation: a-shimmer 1.4s ease-in-out infinite;
+  }
+}
+
+@keyframes a-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.a-toast {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 1.25rem;
+  z-index: 60;
+  margin-inline: auto;
+  width: fit-content;
+  max-width: calc(100% - 2rem);
+  border-radius: 9999px;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  box-shadow: 0 18px 36px -18px rgba(20, 17, 15, 0.6);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .a-toast {
+    animation: a-toast-in 0.25s ease-out both;
+  }
+}
+
+@keyframes a-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Arabic needs a face with Arabic glyphs; Playfair has none. */
+[dir="rtl"] body,
+[dir="rtl"] .font-display {
+  font-family: var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Logical properties only — keeps the Arabic RTL layout honest. */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }

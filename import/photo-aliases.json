@@ -1,0 +1,8 @@
+{
+  "_README": "Reuses one of the restaurant's OWN photos for a dish that is the same food in a different portion. Keyed by the POS item id of the dish with no photo; the value is the id of the dish whose photo to borrow. Only same-food pairs belong here - never a stand-in for a different dish. Items filled this way are marked image_shared: true in menu.json.",
+
+  "628": 751,
+  "289": 290,
+  "130": 431,
+  "438": 443
+}

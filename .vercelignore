@@ -1,0 +1,7 @@
+node_modules
+.next
+out
+qr
+tsconfig.tsbuildinfo
+.cms-archive
+.env*

@@ -1,0 +1,3528 @@
+{
+  "restaurant": {
+    "name": "Al Qaysr",
+    "tagline": "Charcoal grills, shawarma and sandwiches",
+    "description": null,
+    "established": null,
+    "badges": [],
+    "currency": "$",
+    "phone": "70678929",
+    "whatsapp": "+961 70 678 929",
+    "email": null,
+    "address": "Old Saida Road, next to Mar Mkhaeil Church\nChiyah, Beirut, Lebanon",
+    "opening_hours": null,
+    "maps_query": null,
+    "maps_url": null,
+    "instagram_url": null,
+    "facebook_url": null,
+    "logo_url": "/brand/logo.webp",
+    "hero_image_url": null,
+    "hero_images": [
+      "/menu/kilo-mashewe-mshakkal.webp",
+      "/menu/farouj-fahem.webp",
+      "/menu/shawarma-lahme-wajbe.webp"
+    ],
+    "menu_images": {
+      "TABLES": "/menu/8-mashewe.webp",
+      "TAKE_AWAY": "/menu/1001766469.webp"
+    }
+  },
+  "categories": [
+    {
+      "name": "Sandwiches",
+      "slug": "sandwiches",
+      "group": "Food",
+      "description": null,
+      "display_order": 0
+    },
+    {
+      "name": "Salad",
+      "slug": "salad",
+      "group": "Food",
+      "description": null,
+      "display_order": 1
+    },
+    {
+      "name": "Burgers",
+      "slug": "burgers",
+      "group": "Food",
+      "description": null,
+      "display_order": 2
+    },
+    {
+      "name": "Cold Appetizer",
+      "slug": "cold-appetizer",
+      "group": "Food",
+      "description": null,
+      "display_order": 3
+    },
+    {
+      "name": "Hot Appetizer",
+      "slug": "hot-appetizer",
+      "group": "Food",
+      "description": null,
+      "display_order": 4
+    },
+    {
+      "name": "Grilled Platers",
+      "slug": "grilled-platers",
+      "group": "Food",
+      "description": null,
+      "display_order": 5
+    },
+    {
+      "name": "Grilled Sandwiches",
+      "slug": "grilled-sandwiches",
+      "group": "Food",
+      "description": null,
+      "display_order": 6
+    },
+    {
+      "name": "Cold Drinks",
+      "slug": "cold-drinks",
+      "group": "Drinks",
+      "description": null,
+      "display_order": 7
+    },
+    {
+      "name": "Hot Drinks",
+      "slug": "hot-drinks",
+      "group": "Drinks",
+      "description": null,
+      "display_order": 8
+    },
+    {
+      "name": "Narguileh",
+      "slug": "narguileh",
+      "group": "Shisha",
+      "description": null,
+      "display_order": 9
+    },
+    {
+      "name": "EXTRAS",
+      "slug": "extras",
+      "group": "Food",
+      "description": null,
+      "display_order": 10
+    },
+    {
+      "name": "pizza",
+      "slug": "pizza",
+      "group": "Food",
+      "description": null,
+      "display_order": 11
+    },
+    {
+      "name": "SHAWARMA",
+      "slug": "shawarma",
+      "group": "Food",
+      "description": null,
+      "display_order": 12
+    },
+    {
+      "name": "BROASTED",
+      "slug": "broasted",
+      "group": "Food",
+      "description": null,
+      "display_order": 13
+    },
+    {
+      "name": "MAIN COURSE",
+      "slug": "main-course",
+      "group": "Food",
+      "description": null,
+      "display_order": 14
+    },
+    {
+      "name": "OFFERS",
+      "slug": "offers",
+      "group": "Offers",
+      "description": null,
+      "display_order": 15
+    },
+    {
+      "name": "SOFT DRINKS",
+      "slug": "soft-drinks",
+      "group": "Drinks",
+      "description": null,
+      "display_order": 16
+    },
+    {
+      "name": "M-DESSERT",
+      "slug": "m-dessert",
+      "group": "Food",
+      "description": null,
+      "display_order": 17
+    }
+  ],
+  "items": [
+    {
+      "slug": "potato-sandwich-662",
+      "name": "POTATO SANDWICH",
+      "description": "بطاطا, سلطة ملفوف, كاتشاب",
+      "prices": {
+        "TABLES": 2.22,
+        "TAKE_AWAY": 2.22
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "fries-box--130",
+      "name": "FRIES BOX علبة بطاطا",
+      "description": "200 G",
+      "prices": {
+        "TABLES": 2.15,
+        "TAKE_AWAY": 2.22
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/big-fries.webp",
+      "image_shared": true,
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "crispy-sand--485",
+      "name": "CRISPY SAND كرسبي",
+      "description": "كرسبي, بطاطا,سلطة ملفوف, كوكتيل صوص",
+      "prices": {
+        "TABLES": 4.44,
+        "TAKE_AWAY": 4.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "french-fries-plate-431",
+      "name": "FRENCH FRIES PLATE",
+      "description": "320 G",
+      "prices": {
+        "TABLES": 3.55,
+        "TAKE_AWAY": 3.55
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/big-fries.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "crab-sand--645",
+      "name": "CRAB SAND كراب",
+      "description": "تارتار,كبيس,ملح, خس",
+      "prices": {
+        "TABLES": 4.44,
+        "TAKE_AWAY": 4.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "rizo-crispy-772",
+      "name": "RIZO crispy",
+      "description": null,
+      "prices": {
+        "TABLES": 4,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/rizo-crispy_1.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "shrimp-sand--634",
+      "name": "SHRIMP SAND سندويش قريدس",
+      "description": "Breaded shrimp in Lebanese bread.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/shrimp-sand.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "rosto-sand--483",
+      "name": "ROSTO SAND روستو",
+      "description": "زبدة, مايونيز,خردل,نعنع,بندورة,كبيس, خس",
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/rosto.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "chicken-sub-sand--475",
+      "name": "CHICKEN SUB SAND تشكن ساب",
+      "description": "صدر دجاج مشوي, مايونيز,ثوم,موزريلا,ذرة ,كبيس, صويا\nFRIES+SAUCE",
+      "prices": {
+        "TABLES": 4.44,
+        "TAKE_AWAY": 4.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/chicken-sub-sand.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "francisco-sand--473",
+      "name": "FRANCISCO SAND فرانسيسكو",
+      "description": "فيلية دجاج,موزريلا, مايونيز,كبيس,خس,صويا",
+      "prices": {
+        "TABLES": 4.44,
+        "TAKE_AWAY": 4.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "fajita-sand--472",
+      "name": "FAJITA SAND فاهيتا",
+      "description": "صدر دجاج مشوي, فطر, فليفلة, بصل, صوص افوكا, موزريلا\nFRIES+SAUCE",
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/fahita.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "boneless-bomb--646",
+      "name": "BONELESS BOMB بونليس بومب",
+      "description": "3 CRISPY , 200G FRIED POTATO, WRANCH SAUCE, BBQ SAUCE, JALAPINO, CHEDDAR CHEESE",
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/img-20260605-wa0122_1.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "fahita-bomb-775",
+      "name": "FAHITA BOMB",
+      "description": null,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/fahita-bomb.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "rizo-shrimps-776",
+      "name": "RIZO SHRIMPS",
+      "description": null,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/rizo-shrimps.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "chicken-argentina-taco-787",
+      "name": "CHICKEN ARGENTINA TACO",
+      "description": "Grilled chicken taco wrap, Argentina style.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/chicken-argentina.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "boneless-chicken-taco-788",
+      "name": "BONELESS CHICKEN TACO",
+      "description": "Boneless fried chicken in a taco wrap.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/boneless-wrap_1.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "chicken-master-297",
+      "name": "CHICKEN MASTER",
+      "description": null,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/chicken-master.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-802",
+      "name": "بوكس القيصر",
+      "description": null,
+      "prices": {
+        "TABLES": 22.22,
+        "TAKE_AWAY": 16.66
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/1001766467.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "philadelphia-sand--480",
+      "name": "PHILADELPHIA SAND فيلادلفيا",
+      "description": "لحمة فيليه ,فطر,فليفلة ملونة,بصل,مايونيز, فونديل",
+      "prices": {
+        "TABLES": 7,
+        "TAKE_AWAY": 7
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/philadelphia-sand.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "zinger-sand--481",
+      "name": "ZINGER SAND زنجر",
+      "description": "Crispy spiced chicken fillet sandwich.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 7.77
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": "/menu/zinger_1.webp",
+      "category_slug": "sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "fattouch-big--411",
+      "name": "FATTOUCH BIG فتوش كبير",
+      "description": "Large fattoush - garden vegetables with toasted bread and sumac dressing.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/fattouch.webp",
+      "category_slug": "salad",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "rocca-salad--412",
+      "name": "ROCCA SALAD سلطة الروكا",
+      "description": "Rocket leaf salad.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 4,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/rocca.webp",
+      "category_slug": "salad",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "tabbouleh-big--346",
+      "name": "TABBOULEH BIG    تبولة كبير",
+      "description": "Large tabbouleh - parsley, tomato, onion and burghul with lemon.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 4,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/tabbouleh_2.webp",
+      "category_slug": "salad",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "caesar-salad--512",
+      "name": "CAESAR SALAD سيزر القيصر",
+      "description": "Caesar salad with parmesan and croutons.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "salad",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "chicken-caesar-salad--272",
+      "name": "CHICKEN CAESAR SALAD سلطة السيزر بالدجاج",
+      "description": "Caesar salad topped with grilled chicken.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 7,
+        "TAKE_AWAY": 7
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/chicken-ceasar.webp",
+      "category_slug": "salad",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "crab-salad--281",
+      "name": "CRAB SALAD سلطة الكراب",
+      "description": "Crab salad.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 7.5,
+        "TAKE_AWAY": 7.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/crab-salad_1.webp",
+      "category_slug": "salad",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "american-burger-115",
+      "name": "AMERICAN BURGER",
+      "description": "Our Juicy Beef Patty 120 grs topped with cheddar cheese, Grilled tomatoes, Grilled onions, BBQ and Cocktail sauce\nFRIES + SAUCE",
+      "prices": {
+        "TABLES": 4.44,
+        "TAKE_AWAY": 4.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/american-burger2.webp",
+      "category_slug": "burgers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "lebanese-chicken-burger-245",
+      "name": "LEBANESE CHICKEN BURGER",
+      "description": "Charcoal Grilled Chicken ,fresh tomatoes, Garlic, Pickles, Lettuce.",
+      "prices": {
+        "TABLES": 4.44,
+        "TAKE_AWAY": 4.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/chicken-burger.webp",
+      "category_slug": "burgers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "lebanese-beef-burger-487",
+      "name": "LEBANESE BEEF BURGER",
+      "description": "Our Juicy Beef Patty 120,Coleslaw, Fries, Ketchup, Mayo.\n3$ ADDED FOR COMBO (SAUCE+FRIES+PEPSI)",
+      "prices": {
+        "TABLES": 4.44,
+        "TAKE_AWAY": 4.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/img-20260608-wa0041.webp",
+      "category_slug": "burgers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "zinger-burger-307",
+      "name": "ZINGER BURGER",
+      "description": "3$ ADDED FOR COMBO (SAUCE+FRIES+PEPSI)",
+      "prices": {
+        "TABLES": 4.44,
+        "TAKE_AWAY": 4.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/1001766468.webp",
+      "category_slug": "burgers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "swiss-mushrooms-burger-19",
+      "name": "Swiss Mushrooms Burger",
+      "description": "Our juicy beef patty 150 grs, with freshly sauteed mushrooms and grilled onions, topped with melted swiss cheese and American mayonnaise\nFRIES + SAUCE",
+      "prices": {
+        "TABLES": 7,
+        "TAKE_AWAY": 7
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "burgers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "thousand-island-burger-847",
+      "name": "Thousand Island Burger",
+      "description": "Served with fries and sauce",
+      "prices": {
+        "TABLES": 7,
+        "TAKE_AWAY": 7
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/img-20260603-wa0145.webp",
+      "category_slug": "burgers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "hommos--403",
+      "name": "HOMMOS حمص",
+      "description": "Hummus - chickpeas blended with tahini and lemon.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3.8,
+        "TAKE_AWAY": 3.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/hommos.webp",
+      "category_slug": "cold-appetizer",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "moutabbal-plate-374",
+      "name": "MOUTABBAL PLATE",
+      "description": "Moutabbal - smoked aubergine with tahini.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 4,
+        "TAKE_AWAY": 3.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/moutabbal.webp",
+      "category_slug": "cold-appetizer",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "warak-enab--509",
+      "name": "WARAK ENAB ورق عنب",
+      "description": "8 حبات ورق عنب",
+      "prices": {
+        "TABLES": 4.5,
+        "TAKE_AWAY": 4.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/warak-enab_1.webp",
+      "category_slug": "cold-appetizer",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "rakakat--425",
+      "name": "RAKAKAT رقاقات",
+      "description": "Rakakat - fried cheese rolls.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 4,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/rakakat.webp",
+      "category_slug": "hot-appetizer",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "batata-harra--416",
+      "name": "BATATA HARRA بطاطا حرة",
+      "description": "Batata harra - fried potato cubes with coriander, garlic and chilli.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 4.5,
+        "TAKE_AWAY": 4.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/batata-harra.webp",
+      "category_slug": "hot-appetizer",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "chicken-liver--417",
+      "name": "CHICKEN LIVER سودة دجاج",
+      "description": "Sauteed chicken liver.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 6,
+        "TAKE_AWAY": 6
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "hot-appetizer",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "fried-kebbeh--423",
+      "name": "FRIED KEBBEH كبة مقلية",
+      "description": "Fried kebbeh - stuffed burghul and minced meat croquettes.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 6.5,
+        "TAKE_AWAY": 6.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/kebbe.webp",
+      "category_slug": "hot-appetizer",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "shrimps--429",
+      "name": "SHRIMPS قريدس",
+      "description": "Fried shrimp.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 9.5,
+        "TAKE_AWAY": 9.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "hot-appetizer",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-434",
+      "name": "صحن كفتة مشوي",
+      "description": "سياخ كفتة 4, بندورة + بصل مشوي + كبيس+ 2 خبزة حرة",
+      "prices": {
+        "TABLES": 9.44,
+        "TAKE_AWAY": 9.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "-12--684",
+      "name": "جوانح مشوية 12 حبة",
+      "description": "12 grilled chicken wings.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 11.11,
+        "TAKE_AWAY": 6.66
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/whatsapp-image-2025-04-04-at-115559-am.webp",
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "-24--182",
+      "name": "جوانح مشوية 24 حبة",
+      "description": "24 grilled chicken wings.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 11.11
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/img-20250625-wa0159.webp",
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-436",
+      "name": "صحن طاووق احمر مشوي",
+      "description": "اسياخ طاووق2 , خبزة متومة, ثوم , كبيس, بطاطا",
+      "prices": {
+        "TABLES": 8,
+        "TAKE_AWAY": 8
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "-36--569",
+      "name": "جوانح مشوية 36 حبة",
+      "description": "36 grilled chicken wings.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 16.66
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/img-20250719-wa0014.webp",
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-437",
+      "name": "صحن لحمة مشوي",
+      "description": "اسياخ لحمة 2, كبيس, بواز , بندورة,  خبزة حرة, حمص",
+      "prices": {
+        "TABLES": 11.11,
+        "TAKE_AWAY": 11.11
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-438",
+      "name": "نص كيلو مشاوي مشكل",
+      "description": "سيخ كفتة2 , 2 سيخ لحمة غنم, 2 سيخ طاووق ,بطاطا, خبزة حرة, ثوم, كبيس,  بندورة و بصل مشوي, بطاطا",
+      "prices": {
+        "TABLES": 22,
+        "TAKE_AWAY": 22
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/kilo-mashewe-mshakkal.webp",
+      "image_shared": true,
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-440",
+      "name": "كيلو لحم مشوي",
+      "description": "اسياخ لحمة غنم 10, سيخ بصل, سيخ بندورة,  كبيس, خبزة  حرة, حمص",
+      "prices": {
+        "TABLES": 44.4,
+        "TAKE_AWAY": 44.4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-442",
+      "name": "كيلو طاووق  احمر مشوي",
+      "description": "اسياخ طاووق 10, بطاطا,2 ثوم , 1 صوص حار, كبيس, 1 خبز متوم",
+      "prices": {
+        "TABLES": 25,
+        "TAKE_AWAY": 25
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-444",
+      "name": "فروج عالفحم",
+      "description": "ثوم2 , كبيس 2, صوص حار2, بطاطا",
+      "prices": {
+        "TABLES": 14.44,
+        "TAKE_AWAY": 14.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/farouj-fahem.webp",
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-445",
+      "name": "نصف فروج عالفحم",
+      "description": "بطاطا 200 غرام, كبيس,ثوم, صوص حار",
+      "prices": {
+        "TABLES": 7.22,
+        "TAKE_AWAY": 8.33
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/nos-fahem.webp",
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-446",
+      "name": "كيلو كفتة مشوي",
+      "description": "اسياخ كفتة  20, سيخ بصل, سيخ بندورة, كبيس, خبزة  حرة, بواز",
+      "prices": {
+        "TABLES": 35,
+        "TAKE_AWAY": 35
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-443",
+      "name": "كيلو مشاوي مشكل",
+      "description": ",بطاطا,اسياخ لحمة غنم 4, 4اسياخ طاووق,4 اسياخ كفتة, بواز, ثوم, سيخ بندورة, سيخ بصل,كبيس",
+      "prices": {
+        "TABLES": 40,
+        "TAKE_AWAY": 40
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/kilo-mashewe-mshakkal.webp",
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-395",
+      "name": "صحن كباب مشوي",
+      "description": "بندورة + بصل مشوي + كبيس+ 2 خبزة حرة\n, 4 اسياخ كباب",
+      "prices": {
+        "TABLES": 9,
+        "TAKE_AWAY": 9
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-402",
+      "name": "كيلو كباب مشوي",
+      "description": "اسياخ كباب 20, سيخ بصل, سيخ بندورة, كبيس, خبزة  حرة, بواز",
+      "prices": {
+        "TABLES": 35,
+        "TAKE_AWAY": 35
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-745",
+      "name": "صحن مشاوي مشكل",
+      "description": "Mixed grill plate.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 12,
+        "TAKE_AWAY": 12
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/sahen-mashewe-mix.webp",
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-751",
+      "name": "فروج غاز + رز+بطاطا",
+      "description": "Gas-grilled chicken with rice and fries.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 11.11,
+        "TAKE_AWAY": 11.11
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/farouj-8az.webp",
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-845",
+      "name": "نص كيلو لحمة مشوية",
+      "description": "Half a kilo of grilled meat skewers.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 24.44,
+        "TAKE_AWAY": 24.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-848",
+      "name": "صحن كباب قرفلي",
+      "description": "Clove-spiced kebab skewers, grilled.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 9.44,
+        "TAKE_AWAY": 9.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-platers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-448",
+      "name": "سندويش طاووق احمر مشوي",
+      "description": "ثوم, بطاطا, كبيس",
+      "prices": {
+        "TABLES": 4,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-578",
+      "name": "سندويش كفتة",
+      "description": "Grilled kofta sandwich.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 4,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-583",
+      "name": "سندويش كباب",
+      "description": "Grilled kebab sandwich.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 4,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-449",
+      "name": "سندويش لحمة مشوية",
+      "description": "سيخ لحمة,بندورة مشوية, بصل مشوي,حمص, بواز",
+      "prices": {
+        "TABLES": 4.44,
+        "TAKE_AWAY": 4.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-450",
+      "name": "سندويش فروج مشوي فحم",
+      "description": "ثوم, كبيس,100غرام دجاج,صوص حار",
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "grilled-sandwiches",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "lemonade-758",
+      "name": "LEMONADE",
+      "description": "Fresh lemonade.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 2.5,
+        "TAKE_AWAY": 2.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "cold-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "minted-lemonade-148",
+      "name": "Minted Lemonade",
+      "description": "Fresh lemonade blended with mint.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3,
+        "TAKE_AWAY": 3
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/minted-lemonade.webp",
+      "category_slug": "cold-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "orange-juice-213",
+      "name": "Orange Juice",
+      "description": "Freshly squeezed orange juice.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3,
+        "TAKE_AWAY": 3
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "cold-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "carrot-juice-214",
+      "name": "Carrot Juice",
+      "description": "Freshly pressed carrot juice.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3,
+        "TAKE_AWAY": 3
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "cold-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "cocktail-juice-757",
+      "name": "COCKTAIL JUICE",
+      "description": "FRUITS COCKTAIL JUICE",
+      "prices": {
+        "TABLES": 4,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/strawberry-juice_1.webp",
+      "category_slug": "cold-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "mango-juice-729",
+      "name": "MANGO JUICE",
+      "description": "Mango juice.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "cold-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "cocktail-chekaf-778",
+      "name": "COCKTAIL CHEKAF",
+      "description": null,
+      "prices": {
+        "TAKE_AWAY": 7
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "cold-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "small-turkish-coffee-142",
+      "name": "Small Turkish Coffee",
+      "description": "Small Turkish coffee.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 2,
+        "TAKE_AWAY": 2
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "hot-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "tea-box-145",
+      "name": "Tea Box",
+      "description": "Pot of tea.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 1.27,
+        "TAKE_AWAY": 1.27
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "hot-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "espresso-199",
+      "name": "Espresso",
+      "description": "Single shot of espresso.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 1.5,
+        "TAKE_AWAY": 1.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "hot-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "double-espresso-216",
+      "name": "Double Espresso",
+      "description": "Double shot of espresso.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 2,
+        "TAKE_AWAY": 2
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "hot-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "cafe-latte-719",
+      "name": "CAFE LATTE",
+      "description": "Espresso with steamed milk.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3.5,
+        "TAKE_AWAY": 3.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "hot-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "mocha-723",
+      "name": "MOCHA",
+      "description": "Espresso with chocolate and steamed milk.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3.5,
+        "TAKE_AWAY": 3.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "hot-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "nescafe-489",
+      "name": "NESCAFE",
+      "description": "Instant coffee, served hot.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 2,
+        "TAKE_AWAY": 2
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "hot-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "cappucino-490",
+      "name": "CAPPUCINO",
+      "description": "Espresso with steamed milk and foam.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 2.5,
+        "TAKE_AWAY": 2.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "hot-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "mouassal-206",
+      "name": "Mouassal",
+      "description": "Shisha with flavoured mo'assel tobacco.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "shisha-lemon-mint-207",
+      "name": "SHISHA LEMON MINT",
+      "description": "Shisha, lemon and mint.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "shisha-grape-208",
+      "name": "SHISHA GRAPE",
+      "description": "Shisha, grape.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "shisha-grape-mint-209",
+      "name": "SHISHA GRAPE MINT",
+      "description": "Shisha, grape and mint.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "ajami-210",
+      "name": "Ajami",
+      "description": "Shisha served with Ajami tobacco.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 8
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "nakha-218",
+      "name": "Nakha",
+      "description": "Shisha served with Nakhla tobacco.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 7
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "shisha-gum-mint-219",
+      "name": "SHISHA GUM MINT",
+      "description": "Shisha, gum and mint.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "ras-shisha-apple-237",
+      "name": "RAS SHISHA APPLE",
+      "description": "Replacement shisha head, apple.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "ras-ajami-238",
+      "name": "RAS AJAMI",
+      "description": "Replacement shisha head, Ajami tobacco.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 4
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "ras-shisha-grap-239",
+      "name": "RAS SHISHA GRAP",
+      "description": "Replacement shisha head, grape.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "ras-shisha-grape-mint-240",
+      "name": "RAS SHISHA GRAPE MINT",
+      "description": "Replacement shisha head, grape and mint.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "ras-shisha-gum-mint-241",
+      "name": "RAS SHISHA GUM MINT",
+      "description": "Replacement shisha head, gum and mint.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "ras-shisha-lemon-mint-242",
+      "name": "RAS SHISHA LEMON MINT",
+      "description": "Replacement shisha head, lemon and mint.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "ras-nakha-243",
+      "name": "RAS NAKHA",
+      "description": "Replacement shisha head, Nakhla tobacco.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "shisha-blueberry-279",
+      "name": "Shisha Blueberry",
+      "description": "Shisha, blueberry.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "narguileh",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "add-burger-patty-229",
+      "name": "Add Burger Patty",
+      "description": "Extra burger patty.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 2,
+        "TAKE_AWAY": 2
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "extras",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "add-cheddar-cheese-253",
+      "name": "ADD CHEDDAR CHEESE",
+      "description": "Extra cheddar cheese.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 0.75,
+        "TAKE_AWAY": 1.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "extras",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "add-mozzarella-cheese-254",
+      "name": "ADD MOZZARELLA CHEESE",
+      "description": "Extra mozzarella cheese.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 0.75,
+        "TAKE_AWAY": 0.75
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "extras",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "add-pickles-258",
+      "name": "ADD PICKLES",
+      "description": "Extra pickles.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 0.75,
+        "TAKE_AWAY": 0.75
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "extras",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "add-jalapeno-259",
+      "name": "ADD JALAPENO",
+      "description": "Extra jalapeno.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 0.75,
+        "TAKE_AWAY": 0.75
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "extras",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "pizza-margerita--516",
+      "name": "PIZZA MARGERITA بيتزا مارغيريتا",
+      "description": "Pizza margherita - tomato, mozzarella and basil.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "pizza",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "pizza-vegeterian--517",
+      "name": "PIZZA VEGETERIAN بيتزا بالخضار",
+      "description": "Vegetarian pizza with mixed vegetables.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "pizza",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "pizza-pepperoni--518",
+      "name": "PIZZA PEPPERONI بيتزا البيبيروني",
+      "description": "Pepperoni pizza with mozzarella.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 7,
+        "TAKE_AWAY": 7
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "pizza",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-464",
+      "name": "سندويش شاورما لحمة",
+      "description": "طرطور, بواز,بندورة",
+      "prices": {
+        "TABLES": 4,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/1001766469.webp",
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-465",
+      "name": "سندويش شاورما دجاج",
+      "description": "ثوم , كبيس",
+      "prices": {
+        "TABLES": 2.77,
+        "TAKE_AWAY": 2.77
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/img-20260605-wa0111.webp",
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-466",
+      "name": "وجبة شاورما لحمة",
+      "description": "شاورما لحمة 200  غرام,بواز, طرطور,شرحات بندورة,كبيس, بطاطا",
+      "prices": {
+        "TABLES": 11.11,
+        "TAKE_AWAY": 11.11
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/shawarma-lahme-wajbe.webp",
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-467",
+      "name": "وجبة شاورما دجاج",
+      "description": ",شاورما دجاج 200 غرام,بطاطا,  ثوم , كبيس",
+      "prices": {
+        "TABLES": 7,
+        "TAKE_AWAY": 7.77
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/shawarma-wajbe.webp",
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-637",
+      "name": "مرقوق شاورما  دجاج",
+      "description": "ثوم, كبيس, بطاطا",
+      "prices": {
+        "TABLES": 4.44,
+        "TAKE_AWAY": 4.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/1001765734.webp",
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-638",
+      "name": "وجبة مرقوق شاورما دجاج القيصر",
+      "description": "Chicken shawarma markouk wrap meal, Al Qaysr style.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 7.22,
+        "TAKE_AWAY": 7.22
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/img-20260605-wa0137.webp",
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-639",
+      "name": "مرقوق شاورما لحمة",
+      "description": "Beef shawarma in markouk bread.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 6,
+        "TAKE_AWAY": 6
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/1001765735.webp",
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-640",
+      "name": "وجبة مرقوق شاورما لحمة القيصر",
+      "description": "بطاطا, شاورما, ثوم,كبيس",
+      "prices": {
+        "TABLES": 9.5,
+        "TAKE_AWAY": 8.33
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-651",
+      "name": "نص كيلو شاورما لحمة",
+      "description": "Half a kilo of beef shawarma.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 24.44,
+        "TAKE_AWAY": 24.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "doner-chicken--652",
+      "name": "DONER CHICKEN  دجاج  دونر",
+      "description": "Chicken doner.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 4.44,
+        "TAKE_AWAY": 4.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/doner-chicken.webp",
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "doner-beef--654",
+      "name": "DONER BEEF   دونر لحمة",
+      "description": "Beef doner.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 6.66,
+        "TAKE_AWAY": 6.66
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/1001766470.webp",
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-741",
+      "name": "كيلو شاورما دجاج",
+      "description": "One kilo of chicken shawarma.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 22.22,
+        "TAKE_AWAY": 20
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "rizo-shawarma-769",
+      "name": "RIZO SHAWARMA",
+      "description": null,
+      "prices": {
+        "TABLES": 4,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/rizo-shawarma.webp",
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-754",
+      "name": "نص كيلو شاورما دجاج+ بطاطا",
+      "description": "ثوم و كبيس",
+      "prices": {
+        "TABLES": 12.22,
+        "TAKE_AWAY": 12.22
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/img-20250625-wa0144.webp",
+      "category_slug": "shawarma",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "broasted-4pcs-4--289",
+      "name": "BROASTED (4PCS) بروستد (4 قطع)",
+      "description": "سلطة مايونيز, كبيس, بطاطا , ثوم",
+      "prices": {
+        "TABLES": 7.22,
+        "TAKE_AWAY": 8.33
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/8-broasted.webp",
+      "image_shared": true,
+      "category_slug": "broasted",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "broasted-8-pcs-8--290",
+      "name": "BROASTED (8 PCS) بروستد 8 قطع",
+      "description": "سلطة مايونيز2, كبيس2, بطاطا 320 غرام , ثوم,2 صوص حر",
+      "prices": {
+        "TABLES": 14.44,
+        "TAKE_AWAY": 14.44
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/8-broasted.webp",
+      "category_slug": "broasted",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "-3--774",
+      "name": "كرسبي 3 قطع",
+      "description": "3 pieces of crispy fried chicken.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5.55,
+        "TAKE_AWAY": 5.55
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/3-crispy.webp",
+      "category_slug": "broasted",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "crispy-meal-5pcs-5--291",
+      "name": "CRISPY MEAL (5PCS)  وجبة كرسبي (5 قطع)",
+      "description": "كرسبي, بطاطا, سلطة مايونيز, ثوم, كبيس",
+      "prices": {
+        "TABLES": 10,
+        "TAKE_AWAY": 7.77
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/5-crispy_2.webp",
+      "category_slug": "broasted",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "-10--513",
+      "name": "كرسبي 10 قطع",
+      "description": "10 pieces of crispy fried chicken.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 16.66,
+        "TAKE_AWAY": 13.33
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/10-crispy.webp",
+      "category_slug": "broasted",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-389",
+      "name": "صحن رز كبسة",
+      "description": "Plate of kabsa rice.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 4,
+        "TAKE_AWAY": 4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/kabse-rice.webp",
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "fettuccini--321",
+      "name": "FETTUCCINI  فيتوتشيني",
+      "description": "Fettuccine pasta.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 9,
+        "TAKE_AWAY": 9
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/fettuccini_1.webp",
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "escalopini--454",
+      "name": "ESCALOPINI صحن اسكالوب",
+      "description": "Escalope plate.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 13,
+        "TAKE_AWAY": 13
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "swiss-mushroom-chicken-495",
+      "name": "SWISS MUSHROOM CHICKEN",
+      "description": "Chicken in mushroom sauce.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 13,
+        "TAKE_AWAY": 13
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/chicken-mushroom-plate.webp",
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "swiss-mushroom-steak-261",
+      "name": "SWISS MUSHROOM STEAK",
+      "description": "200 G Of Grilled Steak With Mushroom Sauce Served With Fries And Sautéed Veggies",
+      "prices": {
+        "TABLES": 15,
+        "TAKE_AWAY": 15
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/beef-mushroom-plate.webp",
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "polo-chicken-alfredo-851",
+      "name": "Polo Chicken Alfredo",
+      "description": "Chicken alfredo.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 15,
+        "TAKE_AWAY": 15
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/polo-chicken-alfredo.webp",
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "-15--709",
+      "name": "منسف رز كبسة مع دجاج- 15 اشخاص",
+      "description": "Kabsa rice with chicken, mansaf platter for 15.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 60,
+        "TAKE_AWAY": 60
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "-15--708",
+      "name": "منسف رز خاروف مع لحمة -15 اشخاص",
+      "description": "Lamb kabsa rice with meat, mansaf platter for 15.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 80,
+        "TAKE_AWAY": 80
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "set-menu-4--660",
+      "name": "SET MENU/ 4 اشخاص",
+      "description": "كيلو مشاوي مشكل,معجنات مشكل, حمص, فتوش,تبولة,سجق,مقانق,بطاطا حرة, ورق عنب, 4 بيبسي",
+      "prices": {
+        "TABLES": 65
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "set-menu--797",
+      "name": "SET MENU / فروج غاز",
+      "description": "فروج غاز,بطاطا حرة, ثوم , ثوم حر كبيس\n-2 pepsi-حمص, ورق عنب, معجنات مشكل, فتوش / تبولة",
+      "prices": {
+        "TABLES": 25
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "set-menu--798",
+      "name": "SET MENU / فروج فحم",
+      "description": "فروج فحم, بطاطا حرة, ثوم , ثوم حر كبيس-\n-2 pepsi/حمص, ورق عنب, معجنات مشكل, فتوش / تبولة",
+      "prices": {
+        "TABLES": 25
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "set-menu-10--799",
+      "name": "SET MENU/ 10 كرسبي",
+      "description": "كرسبي 10, بطاطا, ثوم , ثوم حر ,كبيس\n-2  pepsi-حمص, ورق عنب, معجنات مشكل, فتوش , تبولة, رز",
+      "prices": {
+        "TABLES": 25
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "set-menu--800",
+      "name": "SET MENU / فروج بروستد",
+      "description": "فروج بروستد, بطاطا حرة, ثوم , ثوم حر كبيس\n-2 pepsi-حمص, ورق عنب, معجنات مشكل, فتوش / تبولة",
+      "prices": {
+        "TABLES": 25
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "2-steak-plates-803",
+      "name": "2 STEAK PLATES",
+      "description": "Any two steak plates+shisha+2 soft drinks",
+      "prices": {
+        "TABLES": 30
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "2-chicken-plates-874",
+      "name": "2 CHICKEN PLATES",
+      "description": "POLO ALFREDO OR ESCALOPPINI\nshisha+2 soft drinks",
+      "prices": {
+        "TABLES": 30
+      },
+      "menus": [
+        "TABLES"
+      ],
+      "image_url": null,
+      "category_slug": "main-course",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-698",
+      "name": "فروج و نص عالفحم+ بطاطا+سرفيس",
+      "description": "One and a half charcoal-grilled chickens with fries and full service.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 20
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/farouj-w-nos-fahem.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-699",
+      "name": "فروج و نص بروستد +بطاطا + سرفيس",
+      "description": "One and a half broasted chickens with fries and full service.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 20
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/broasted.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-628",
+      "name": "فروج غاز+رز+بطاطا",
+      "description": "فروج غاز+ بطاطا + رز+ثوم و كبيس",
+      "prices": {
+        "TAKE_AWAY": 11.11
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/farouj-8az.webp",
+      "image_shared": true,
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-683",
+      "name": "فروجين عالغاز مع رز و بطاطا",
+      "description": "فروجين عالغاز,رز كبسة, بطاطا, سرفيس كامل",
+      "prices": {
+        "TAKE_AWAY": 20
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/faroujen-8az.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-712",
+      "name": "وجبة شاورما دجاج مرقوق دوبل",
+      "description": "Double chicken shawarma markouk meal.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 7.77
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/double-djej.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "5--617",
+      "name": "5 شاورما دجاج",
+      "description": "5 chicken shawarma sandwiches.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 10
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/3-shawarma.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "2-lebanese-burger-746",
+      "name": "2 LEBANESE BURGER",
+      "description": "2 Lebanese burgers.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 7.77
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/lebanese-offer.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "item-765",
+      "name": "وجبة شاورما لحمة مرقرق دوبل",
+      "description": "Double beef shawarma markouk meal.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 11.11
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/img-20250625-wa0160.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "5-8--671",
+      "name": "5 بروستد 8 +  كرسبي",
+      "description": "5 pieces broasted, 8 pieces crispy.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 20
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/5-crispy-8-broasted.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "-8-667",
+      "name": "صحن مشاوي مشكل(8)",
+      "description": "سيخ كفتة2 , 2سيخ كباب, 2 سيخ لحمة غنم,2سيخ طاووق ,بطاطا, خبزة حرة, ثوم, كبيس,  بندورة و بصل مشوي",
+      "prices": {
+        "TAKE_AWAY": 17.77
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/8-mashewe.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "-15--621",
+      "name": "كرسبي 15 قطع",
+      "description": "15 pieces of crispy fried chicken.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 20
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/15-crispy.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "2-fahita-sandwiches-766",
+      "name": "2 FAHITA SANDWICHES",
+      "description": "2 fajita sandwiches.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 8.88
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/2-fahita.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "2--770",
+      "name": "2 سندويش مشاوي",
+      "description": "2 grilled meat sandwiches.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 7.77
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/2-mashewe.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "2-zinger-burger-773",
+      "name": "2 ZINGER BURGER",
+      "description": "2 zinger burgers.",
+      "description_generated": true,
+      "prices": {
+        "TAKE_AWAY": 7.77
+      },
+      "menus": [
+        "TAKE_AWAY"
+      ],
+      "image_url": "/menu/zinger-offer.webp",
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "shawarma-box-814",
+      "name": "SHAWARMA BOX",
+      "description": "4 shawarma chicken\n4 shawarma beef\n4 shawarma doner",
+      "prices": {
+        "TABLES": 16.66,
+        "TAKE_AWAY": 16.66
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "offers",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "soft-drinks-154",
+      "name": "Soft Drinks",
+      "description": "Chilled canned soft drink.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 1.11,
+        "TAKE_AWAY": 1.11
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "soft-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "pepsi-diet-202",
+      "name": "PEPSI DIET",
+      "description": "Chilled can of Pepsi Diet.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 1.11,
+        "TAKE_AWAY": 1.11
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "soft-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "7up-203",
+      "name": "7UP",
+      "description": "Chilled can of 7UP.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 1.11,
+        "TAKE_AWAY": 1.11
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "soft-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "7up-diet-204",
+      "name": "7UP DIET",
+      "description": "Chilled can of 7UP Diet.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 1.11,
+        "TAKE_AWAY": 1.11
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "soft-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "mirinda-205",
+      "name": "MIRINDA",
+      "description": "Chilled can of Mirinda.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 1.11,
+        "TAKE_AWAY": 1.11
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "soft-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "small-water-200",
+      "name": "Small Water",
+      "description": "Small bottle of still water.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 0.5,
+        "TAKE_AWAY": 0.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "soft-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "large-water-201",
+      "name": "Large Water",
+      "description": "Large bottle of still water.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 1.5,
+        "TAKE_AWAY": 1.5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "soft-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "sparkling-water-217",
+      "name": "Sparkling Water",
+      "description": "Bottle of sparkling water.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 2,
+        "TAKE_AWAY": 2
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "soft-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "ayran-milk-151",
+      "name": "Ayran Milk",
+      "description": "Ayran - chilled salted yoghurt drink.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 1.11,
+        "TAKE_AWAY": 1.11
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "soft-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "boom-boom-710",
+      "name": "Boom Boom",
+      "description": "Chilled canned energy drink.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 3,
+        "TAKE_AWAY": 3
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "soft-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "dark-blue-711",
+      "name": "DARK BLUE",
+      "description": "Chilled canned energy drink.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 1.4,
+        "TAKE_AWAY": 1.4
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "soft-drinks",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "nutella-crepe-714",
+      "name": "NUTELLA CREPE",
+      "description": "Crepe filled with Nutella.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "m-dessert",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "white-choco-crepe-715",
+      "name": "WHITE CHOCO CREPE",
+      "description": "Crepe filled with white chocolate.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "m-dessert",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "lotus-crepe-716",
+      "name": "LOTUS CREPE",
+      "description": "Crepe filled with Lotus spread.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "m-dessert",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "orio-crepe-717",
+      "name": "ORIO CREPE",
+      "description": "Crepe filled with crushed Oreo.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 5,
+        "TAKE_AWAY": 5
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "m-dessert",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    },
+    {
+      "slug": "pistachio-crepe-815",
+      "name": "PISTACHIO CREPE",
+      "description": "Crepe filled with pistachio cream.",
+      "description_generated": true,
+      "prices": {
+        "TABLES": 7,
+        "TAKE_AWAY": 7
+      },
+      "menus": [
+        "TABLES",
+        "TAKE_AWAY"
+      ],
+      "image_url": null,
+      "category_slug": "m-dessert",
+      "is_available": true,
+      "is_featured": false,
+      "is_best_seller": false,
+      "is_recommended": false,
+      "is_spicy": false
+    }
+  ]
+}
