@@ -3,5 +3,4 @@ node_modules
 out
 qr
 tsconfig.tsbuildinfo
-.cms-archive
 .env*
