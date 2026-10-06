@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { db, isConfigured } from "@/lib/supabase/browser";
 import { checkAdmin, loadAll, removeItem } from "@/lib/admin";
 import type { AdminItem } from "@/lib/admin";
-import { ItemForm, CategoryEditor, SettingsEditor } from "@/components/admin/AdminForms";
+import { ItemForm, CategoryEditor, SettingsEditor, PasswordEditor } from "@/components/admin/AdminForms";
 import { MENU_TYPES } from "@/lib/types";
 
 type View = "items" | "categories" | "settings";
@@ -277,12 +277,16 @@ export function AdminApp() {
           <CategoryEditor categories={categories} onDone={refresh} onSay={say} />
         )}
 
-        {view === "settings" &&
-          (data?.restaurant ? (
-            <SettingsEditor restaurant={data.restaurant} onDone={refresh} onSay={say} />
-          ) : (
-            <ListSkeleton />
-          ))}
+        {view === "settings" && (
+          <div className="space-y-8">
+            {data?.restaurant ? (
+              <SettingsEditor restaurant={data.restaurant} onDone={refresh} onSay={say} />
+            ) : (
+              <ListSkeleton />
+            )}
+            <PasswordEditor onSay={say} />
+          </div>
+        )}
       </main>
 
       <Toast notice={notice} onClear={() => setNotice(null)} />

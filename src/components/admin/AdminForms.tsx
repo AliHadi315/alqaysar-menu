@@ -3,8 +3,9 @@
 import { useState } from "react";
 import { MENU_TYPES } from "@/lib/types";
 import type { MenuType } from "@/lib/types";
-import { removeCategory, saveCategory, saveItem, saveRestaurant, uploadImage } from "@/lib/admin";
+import { changePassword, removeCategory, saveCategory, saveItem, saveRestaurant, uploadImage } from "@/lib/admin";
 import type { AdminCategory, AdminItem } from "@/lib/admin";
+import { passwordProblem } from "@/lib/password";
 
 type Say = (text: string, kind?: "ok" | "bad") => void;
 
@@ -465,6 +466,94 @@ export function SettingsEditor({
 
       <button type="submit" disabled={busy} className="a-btn a-btn-primary">
         {busy ? "Saving…" : "Save details"}
+      </button>
+    </form>
+  );
+}
+
+/** The owner's own password, changeable without the Supabase dashboard. */
+export function PasswordEditor({ onSay }: { onSay: Say }) {
+  const [current, setCurrent] = useState("");
+  const [next, setNext] = useState("");
+  const [confirm, setConfirm] = useState("");
+  const [busy, setBusy] = useState(false);
+
+  const problem = passwordProblem(current, next, confirm);
+
+  return (
+    <form
+      onSubmit={async (e) => {
+        e.preventDefault();
+        if (problem) return onSay(problem, "bad");
+        setBusy(true);
+        try {
+          await changePassword(current, next);
+          setCurrent("");
+          setNext("");
+          setConfirm("");
+          onSay("Password changed — use the new one next time you sign in");
+        } catch (err) {
+          onSay((err as Error).message, "bad");
+        } finally {
+          setBusy(false);
+        }
+      }}
+      className="max-w-2xl space-y-5 border-t border-line pt-8"
+    >
+      <div>
+        <h2 className="font-display text-2xl">Your password</h2>
+        <p className="mt-1 text-sm text-muted">
+          Only changes how you sign in to this panel. Nothing on the public website changes.
+        </p>
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2">
+        <label className="block text-sm sm:col-span-2">
+          Current password
+          <input
+            type="password"
+            required
+            autoComplete="current-password"
+            value={current}
+            onChange={(e) => setCurrent(e.target.value)}
+            className="a-input mt-1"
+          />
+        </label>
+
+        <label className="block text-sm">
+          New password
+          <input
+            type="password"
+            required
+            minLength={8}
+            autoComplete="new-password"
+            value={next}
+            onChange={(e) => setNext(e.target.value)}
+            className="a-input mt-1"
+          />
+        </label>
+
+        <label className="block text-sm">
+          New password again
+          <input
+            type="password"
+            required
+            autoComplete="new-password"
+            value={confirm}
+            onChange={(e) => setConfirm(e.target.value)}
+            className="a-input mt-1"
+          />
+        </label>
+      </div>
+
+      {problem && (
+        <p role="alert" className="rounded-lg bg-red-50 p-3 text-sm text-red-800">
+          {problem}
+        </p>
+      )}
+
+      <button type="submit" disabled={busy || Boolean(problem)} className="a-btn a-btn-primary">
+        {busy ? "Changing…" : "Change password"}
       </button>
     </form>
   );

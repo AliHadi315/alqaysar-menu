@@ -122,3 +122,25 @@ export async function uploadImage(file: File) {
   if (error) throw error;
   return db().storage.from("menu").getPublicUrl(path).data.publicUrl;
 }
+
+/**
+ * Change the signed-in admin's own password, so a forgotten one does not mean
+ * a trip to the Supabase dashboard.
+ *
+ * The current password is checked first. The panel is meant to live on a
+ * tablet behind the counter, so a session left open should not be enough for
+ * a passer-by to lock the owner out of their own menu.
+ */
+export async function changePassword(current: string, next: string) {
+  const { data: { user } } = await db().auth.getUser();
+  if (!user?.email) throw new Error("Sign in again before changing the password.");
+
+  const { error: mismatch } = await db().auth.signInWithPassword({
+    email: user.email,
+    password: current,
+  });
+  if (mismatch) throw new Error("That is not the current password.");
+
+  const { error } = await db().auth.updateUser({ password: next });
+  if (error) throw error;
+}
