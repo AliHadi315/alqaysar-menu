@@ -63,7 +63,7 @@ export function VisitSection({ restaurant }: { restaurant: Restaurant }) {
               </a>
             )}
             {tel && (
-              <a href={tel} className="visit-btn inline-flex min-h-11 items-center rounded-full border border-line px-6 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
+              <a href={tel} className="visit-btn inline-flex min-h-11 items-center rounded-full border border-line px-6 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-brand">
                 {t("visit.call", { phone: restaurant.phone ?? "" })}
               </a>
             )}
@@ -72,7 +72,7 @@ export function VisitSection({ restaurant }: { restaurant: Restaurant }) {
                 href={maps.directions}
                 target="_blank"
                 rel="noreferrer"
-                className="visit-btn inline-flex min-h-11 items-center rounded-full border border-line px-6 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+                className="visit-btn inline-flex min-h-11 items-center rounded-full border border-line px-6 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
               >
                 {t("visit.directions")}
               </a>

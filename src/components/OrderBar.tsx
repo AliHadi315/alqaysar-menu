@@ -44,7 +44,7 @@ export function OrderBar({
                     type="button"
                     aria-label={t("order.less", { name: l.name })}
                     onClick={() => onSetQty(l.slug, l.qty - 1)}
-                    className="qty-btn h-11 w-11 rounded-full border border-line text-lg leading-none focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+                    className="qty-btn h-11 w-11 rounded-full border border-line text-lg leading-none focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
                   >
                     −
                   </button>
@@ -53,7 +53,7 @@ export function OrderBar({
                     type="button"
                     aria-label={t("order.more", { name: l.name })}
                     onClick={() => onSetQty(l.slug, l.qty + 1)}
-                    className="qty-btn h-11 w-11 rounded-full border border-line text-lg leading-none focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+                    className="qty-btn h-11 w-11 rounded-full border border-line text-lg leading-none focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
                   >
                     +
                   </button>
@@ -61,7 +61,7 @@ export function OrderBar({
               </li>
             ))}
           </ul>
-          <button type="button" onClick={onClear} className="clear-btn my-3 text-sm text-muted underline focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
+          <button type="button" onClick={onClear} className="clear-btn my-3 text-sm text-muted underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand">
             {t("order.clear")}
           </button>
         </div>
@@ -72,7 +72,7 @@ export function OrderBar({
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
-          className="review-btn flex-1 rounded-lg text-start focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+          className="review-btn flex-1 rounded-lg text-start focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
         >
           <span className="review-total block text-sm font-medium transition-colors">
             {t(count === 1 ? "order.item" : "order.items", { n: count })} · {formatPrice(orderTotal(lines), currency)}

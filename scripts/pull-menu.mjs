@@ -60,6 +60,7 @@ try {
       category_slug: i.categories.slug,
       is_available: i.is_available,
       is_featured: i.is_featured,
+      featured_order: i.featured_order ?? 0,
       is_best_seller: i.is_best_seller,
       is_recommended: i.is_recommended,
       is_spicy: i.is_spicy,

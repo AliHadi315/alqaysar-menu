@@ -4,10 +4,16 @@ import { useCallback, useEffect, useState } from "react";
 import { db, isConfigured } from "@/lib/supabase/browser";
 import { checkAdmin, loadAll, removeItem } from "@/lib/admin";
 import type { AdminItem } from "@/lib/admin";
-import { ItemForm, CategoryEditor, SettingsEditor, PasswordEditor } from "@/components/admin/AdminForms";
+import {
+  ItemForm,
+  CategoryEditor,
+  SettingsEditor,
+  PasswordEditor,
+  FavouritesEditor,
+} from "@/components/admin/AdminForms";
 import { MENU_TYPES } from "@/lib/types";
 
-type View = "items" | "categories" | "settings";
+type View = "items" | "favourites" | "categories" | "settings";
 export type Notice = { text: string; kind: "ok" | "bad" } | null;
 
 export function AdminApp() {
@@ -115,7 +121,7 @@ export function AdminApp() {
         <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-3 px-4 py-3">
           <span className="font-display text-lg">Al Qaysr admin</span>
           <nav className="flex gap-1 text-sm">
-            {(["items", "categories", "settings"] as View[]).map((v) => (
+            {(["items", "favourites", "categories", "settings"] as View[]).map((v) => (
               <button
                 key={v}
                 onClick={() => {
@@ -271,6 +277,13 @@ export function AdminApp() {
                 </div>
               )}
             </>
+          ))}
+
+        {view === "favourites" &&
+          (data ? (
+            <FavouritesEditor items={items} onDone={refresh} onSay={say} />
+          ) : (
+            <ListSkeleton />
           ))}
 
         {view === "categories" && (

@@ -71,7 +71,8 @@ const { data: items, error: itemErr } = await db
     description_generated: !!i.description_generated,
     image_url: i.image_url, image_shared: !!i.image_shared,
     is_available: i.is_available, is_active: true,
-    is_featured: i.is_featured, is_best_seller: i.is_best_seller,
+    is_featured: i.is_featured, featured_order: i.featured_order ?? 0,
+    is_best_seller: i.is_best_seller,
     is_recommended: i.is_recommended, is_spicy: i.is_spicy,
     display_order: n,
   })), { onConflict: "slug" })

@@ -9,6 +9,7 @@ import { ItemDialog } from "@/components/ItemDialog";
 import { OrderBar } from "@/components/OrderBar";
 import { loadOrder, saveOrder } from "@/lib/order";
 import type { OrderLine } from "@/lib/order";
+import { OFFERS_GROUP } from "@/lib/types";
 import type { Category, MenuType, PricedItem, Restaurant } from "@/lib/types";
 
 export function MenuBrowser({
@@ -94,7 +95,7 @@ export function MenuBrowser({
                 key={category.slug}
                 type="button"
                 onClick={() => scrollTo(category.slug)}
-                className="cat-chip min-h-11 shrink-0 rounded-full border border-line bg-surface px-4 py-2.5 text-sm whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+                className="cat-chip min-h-11 shrink-0 rounded-full border border-line bg-surface px-4 py-2.5 text-sm whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
               >
                 {category.name}
               </button>
@@ -117,24 +118,32 @@ export function MenuBrowser({
           <p className="py-16 text-center text-muted">{t("menu.updating")}</p>
         ) : (
           <div className="space-y-12">
-            {sections.map(({ category, items: catItems }) => (
+            {sections.map(({ category, items: catItems }) => {
+              const isOffers = category.group === OFFERS_GROUP;
+              return (
               <section
                 key={category.slug}
                 id={category.slug}
                 ref={(el) => {
                   sectionRefs.current[category.slug] = el;
                 }}
-                className="scroll-mt-36"
+                className={"scroll-mt-36" + (isOffers ? " offers-band" : "")}
               >
                 <Reveal blur={false}>
+                  {isOffers && <p className="offers-eyebrow">{t("menu.offers")}</p>}
                   <h2 className="mb-1 font-display text-2xl">{category.name}</h2>
-                  {category.description && <p className="mb-4 text-sm text-muted">{category.description}</p>}
+                  {category.description && (
+                    <p className={"mb-4 text-sm " + (isOffers ? "text-ink-soft" : "text-muted")}>
+                      {category.description}
+                    </p>
+                  )}
                   <div className="mt-4">
                     <Grid items={catItems} currency={currency} onOpen={setActive} onAdd={addItem} qtyOf={qtyOf} />
                   </div>
                 </Reveal>
               </section>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>

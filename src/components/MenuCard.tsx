@@ -25,7 +25,7 @@ export function MenuCard({
       <button
         type="button"
         onClick={onOpen}
-        className="menu-card-frame flex h-full w-full flex-col overflow-hidden rounded-2xl border border-line bg-surface text-start transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+        className="menu-card-frame flex h-full w-full flex-col overflow-hidden rounded-2xl border border-line bg-surface text-start transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
       >
         <div className="relative aspect-[4/3] w-full overflow-hidden bg-line">
           {item.image_url ? (
@@ -64,7 +64,7 @@ export function MenuCard({
           type="button"
           onClick={onAdd}
           aria-label={t("order.add", { name: item.name })}
-          className="menu-card-cta absolute bottom-3 end-3 flex h-11 w-11 items-center justify-center rounded-full bg-ink text-lg leading-none text-ivory transition hover:bg-gold hover:text-ink"
+          className="menu-card-cta absolute bottom-3 end-3 flex h-11 w-11 items-center justify-center rounded-full bg-ink text-lg leading-none text-ivory transition hover:bg-brand-deep hover:text-white"
         >
           {qty > 0 ? <span className="text-sm font-semibold tabular-nums">{qty}</span> : "+"}
         </button>

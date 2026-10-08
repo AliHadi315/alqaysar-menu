@@ -34,7 +34,7 @@ export function MenuList({
             <button
               type="button"
               onClick={() => onOpen(item)}
-              className="min-w-0 flex-1 text-start focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+              className="min-w-0 flex-1 text-start focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
             >
               <span className="flex items-baseline gap-2">
                 <span className="menu-row-name font-display text-lg leading-snug transition-colors">{item.name}</span>
@@ -59,7 +59,7 @@ export function MenuList({
                 type="button"
                 onClick={() => onAdd(item)}
                 aria-label={t("order.add", { name: item.name })}
-                className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-line text-base leading-none transition hover:border-gold hover:bg-ink hover:text-ivory"
+                className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-line text-base leading-none transition hover:border-brand hover:bg-ink hover:text-ivory"
               >
                 {qty > 0 ? <span className="text-sm font-semibold tabular-nums">{qty}</span> : "+"}
               </button>

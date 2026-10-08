@@ -61,7 +61,7 @@ export function LanguageToggle() {
       type="button"
       onClick={() => setLang(lang === "ar" ? "en" : "ar")}
       aria-label={t("lang.label")}
-      className="lang-btn inline-flex min-h-11 items-center rounded-full border border-line px-3.5 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+      className="lang-btn inline-flex min-h-11 items-center rounded-full border border-line px-3.5 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
     >
       {t("lang.switch")}
     </button>

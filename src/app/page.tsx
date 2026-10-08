@@ -61,7 +61,7 @@ export default function HomePage() {
           <Reveal index={3}>
             <Link
               href="/menu"
-              className="hero-cta mt-9 inline-block rounded-full bg-gold px-8 py-4 text-sm font-medium uppercase tracking-widest text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ivory focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
+              className="hero-cta mt-9 inline-block rounded-full bg-brand-deep px-8 py-4 text-sm font-medium uppercase tracking-widest text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-ivory focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
             >
               <T k="home.viewMenu" />
             </Link>

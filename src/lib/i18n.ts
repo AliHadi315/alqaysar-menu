@@ -17,6 +17,7 @@ export const STRINGS = {
 
   "home.explore": { en: "How would you like to explore?", ar: "كيف تحب أن تتصفح القائمة؟" },
   "home.favourites": { en: "Guest favourites", ar: "الأكثر طلباً" },
+  "menu.offers": { en: "Offers", ar: "عروض" },
   "home.viewMenu": { en: "View menu", ar: "تصفح القائمة" },
 
   "menu.title": { en: "Our menu", ar: "قائمتنا" },

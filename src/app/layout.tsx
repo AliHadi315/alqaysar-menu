@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Noto_Sans_Arabic, Playfair_Display } from "next/font/google";
 import { LanguageProvider } from "@/components/LanguageProvider";
 import "./globals.css";
@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: "Al Qaysr — Grills, Shawarma & Sandwiches",
   description: "The Al Qaysr menu in Chiyah, Beirut — charcoal grills, shawarma, sandwiches and shisha. Browse the take away and dine-in menus.",
   openGraph: { title: "Al Qaysr", description: "Charcoal grills, shawarma and sandwiches in Chiyah, Beirut.", type: "website" },
+};
+
+// Paints the phone's browser chrome in the logo red. icon.png and apple-icon.png
+// sit beside this file, which is how Next wires up the tab and home-screen icons.
+export const viewport: Viewport = {
+  themeColor: "#ee2e24",
 };
 
 // Applies the saved language before first paint so Arabic does not flash LTR.

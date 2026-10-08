@@ -1,5 +1,8 @@
 export type MenuType = "TAKE_AWAY" | "TABLES";
 
+/** Category group holding the restaurant's deals. Pinned to the top of Take Away. */
+export const OFFERS_GROUP = "Offers";
+
 export const MENU_TYPES: { type: MenuType; slug: string; label: string; blurb: string }[] = [
   { type: "TAKE_AWAY", slug: "takeaway", label: "Take Away", blurb: "Order to go" },
   { type: "TABLES", slug: "tables", label: "Tables", blurb: "Dine with us" },
@@ -33,7 +36,11 @@ export type MenuItem = {
   category_slug: string;
   /** Set false in menu.json to show a dish as sold out without deleting it. */
   is_available: boolean;
+  /** Shows the dish in Guest favourites on the homepage. */
   is_featured: boolean;
+  /** Position within Guest favourites; ties fall back to display_order. */
+  featured_order?: number;
+  /** Badge only — does not put the dish on the homepage. */
   is_best_seller: boolean;
   is_recommended: boolean;
   is_spicy: boolean;

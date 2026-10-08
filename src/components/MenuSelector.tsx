@@ -18,7 +18,7 @@ export function MenuSelector({ restaurant }: { restaurant: Restaurant }) {
           <Reveal key={m.slug} index={i}>
           <Link
             href={`/menu/${m.slug}`}
-            className="choice-card relative isolate flex min-h-[220px] flex-col justify-end overflow-hidden rounded-3xl border border-line bg-ink text-ivory focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+            className="choice-card relative isolate flex min-h-[220px] flex-col justify-end overflow-hidden rounded-3xl border border-line bg-ink text-ivory focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
           >
             {image && (
               /* eslint-disable-next-line @next/next/no-img-element */
@@ -34,7 +34,7 @@ export function MenuSelector({ restaurant }: { restaurant: Restaurant }) {
             <div className="p-6">
               <p className="font-display text-3xl">{t(`type.${m.type}` as StringKey)}</p>
               <p className="mt-1 text-sm text-ivory/75">{t(`blurb.${m.type}` as StringKey)}</p>
-              <p className="choice-cta mt-3 text-sm text-gold">
+              <p className="choice-cta mt-3 text-sm text-brand">
                 {t("home.viewMenu")} →
               </p>
             </div>

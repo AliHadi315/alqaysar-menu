@@ -21,6 +21,7 @@ export type AdminItem = {
   is_available: boolean;
   is_active: boolean;
   is_featured: boolean;
+  featured_order: number;
   is_best_seller: boolean;
   is_recommended: boolean;
   is_spicy: boolean;
@@ -143,4 +144,26 @@ export async function changePassword(current: string, next: string) {
 
   const { error } = await db().auth.updateUser({ password: next });
   if (error) throw error;
+}
+
+/**
+ * Guest favourites, the homepage row. `is_best_seller` is only a badge — it no
+ * longer drags a dish onto the homepage, so this list is the single lever.
+ */
+export const FAVOURITES_SHOWN = 8;
+
+export async function setFavourite(id: string, on: boolean, featured_order = 0) {
+  const { error } = await db()
+    .from("menu_items")
+    .update({ is_featured: on, featured_order })
+    .eq("id", id);
+  if (error) throw error;
+}
+
+/** Write the whole list's positions; index is the order the owner dragged into. */
+export async function saveFavouriteOrder(ids: string[]) {
+  for (const [i, id] of ids.entries()) {
+    const { error } = await db().from("menu_items").update({ featured_order: i }).eq("id", id);
+    if (error) throw error;
+  }
 }

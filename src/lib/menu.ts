@@ -1,4 +1,6 @@
 import data from "@/data/menu.json";
+import { favouritesOf } from "@/lib/favourites";
+import { OFFERS_GROUP } from "@/lib/types";
 import type { Category, MenuData, MenuType, PricedItem, Restaurant } from "@/lib/types";
 
 /**
@@ -11,8 +13,19 @@ export function getRestaurant(): Restaurant {
   return menu.restaurant;
 }
 
-export function getCategories(): Category[] {
-  return [...menu.categories].sort((a, b) => a.display_order - b.display_order);
+/**
+ * Menu sections in order. On Take Away the Offers group is pulled to the top —
+ * the deals are why most people open that menu.
+ *
+ * Tables keeps the printed order on purpose: every offer but one is take-away
+ * only, so pinning a one-dish section above the food would read as a mistake.
+ */
+export function getCategories(menuType?: MenuType): Category[] {
+  const ordered = [...menu.categories].sort((a, b) => a.display_order - b.display_order);
+  if (menuType !== "TAKE_AWAY") return ordered;
+
+  const offers = ordered.filter((c) => c.group === OFFERS_GROUP);
+  return offers.length ? [...offers, ...ordered.filter((c) => c.group !== OFFERS_GROUP)] : ordered;
 }
 
 /** Dishes on one menu, each with that menu's price. */
@@ -22,10 +35,15 @@ export function getMenuItems(menuType: MenuType): PricedItem[] {
     .map((i) => ({ ...i, price: i.prices[menuType]! }));
 }
 
-/** Highlights for the landing page. Dine-in price, falling back to take away. */
+/**
+ * Guest favourites for the landing page, in the order the owner chose.
+ * Dine-in price, falling back to take away.
+ *
+ * Best seller is a badge, not a homepage slot: ticking it used to push a dish
+ * up here as a side effect, which made the section impossible to curate.
+ */
 export function getFeatured(limit = 8): PricedItem[] {
-  return menu.items
-    .filter((i) => i.is_available && (i.is_featured || i.is_best_seller))
+  return favouritesOf(menu.items.filter((i) => i.is_available))
     .map((i) => ({ ...i, price: i.prices.TABLES ?? i.prices.TAKE_AWAY! }))
     .slice(0, limit);
 }

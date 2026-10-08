@@ -4,9 +4,20 @@
   --color-ink: #14110f;
   --color-ink-soft: #3d3631;
   --color-muted: #796f67;
+  /* Brand red, sampled from the logo in public/brand/logo.webp. Fills, borders
+     and focus rings only: #ee2e24 is 4.16:1 on white, which clears the 3:1 bar
+     for UI but not the 4.5:1 one for text. It is 4.52:1 on ink, so it is safe
+     as text on the dark hero and selector. */
+  --color-brand: #ee2e24;
+  /* The same hue darkened until it passes both ways (5.92:1): button fills
+     carrying white labels, and any red text on a light background. */
+  --color-brand-deep: #c0271e;
+  /* Hover wash. Keeps brand-deep on it at 5.10:1. */
+  --color-brand-soft: #fdeae9;
+
+  /* Gold is no longer the interface accent — it now marks deals only, so the
+     Offers band and the Best seller badge stand apart from ordinary controls. */
   --color-gold: #b08a3e;
-  /* Gold text on a light background: #b08a3e is only 3.0:1, this is 4.6:1. */
-  --color-gold-text: #8a6c31;
   --color-gold-soft: #e7d9bd;
   --color-ivory: #faf7f2;
   --color-surface: #ffffff;
@@ -87,7 +98,7 @@ body {
   }
 
   .menu-card:hover .menu-card-frame {
-    border-color: var(--color-gold);
+    border-color: var(--color-brand);
   }
 
   .menu-card-img {
@@ -99,11 +110,11 @@ body {
   }
 
   .menu-row:hover {
-    background-color: color-mix(in srgb, var(--color-gold-soft) 35%, transparent);
+    background-color: color-mix(in srgb, var(--color-brand-soft) 60%, transparent);
   }
 
   .menu-row:hover .menu-row-name {
-    color: var(--color-gold-text);
+    color: var(--color-brand-deep);
   }
 }
 
@@ -153,7 +164,7 @@ body {
   }
 
   .choice-card:hover {
-    border-color: var(--color-gold);
+    border-color: var(--color-brand);
     box-shadow: 0 26px 50px -28px rgba(20, 17, 15, 0.7);
   }
 
@@ -223,7 +234,7 @@ body {
   }
 
   .review-btn:hover .review-total {
-    color: var(--color-gold-text);
+    color: var(--color-brand-deep);
   }
 
   .clear-btn:hover {
@@ -280,7 +291,7 @@ body {
 
 @media (hover: hover) and (pointer: fine) {
   .link-underline:hover {
-    color: var(--color-gold-text);
+    color: var(--color-brand-deep);
   }
 
   .link-underline:hover::after {
@@ -288,12 +299,12 @@ body {
   }
 
   .brand:hover .brand-name {
-    color: var(--color-gold-text);
+    color: var(--color-brand-deep);
   }
 
   .lang-btn:hover {
-    border-color: var(--color-gold);
-    background-color: color-mix(in srgb, var(--color-gold-soft) 45%, transparent);
+    border-color: var(--color-brand);
+    background-color: color-mix(in srgb, var(--color-brand-soft) 70%, transparent);
   }
 }
 
@@ -322,8 +333,8 @@ body {
 
 /* Focus is not hover-gated: it has to work for touch and keyboard too. */
 .search-field:focus {
-  border-color: var(--color-gold);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-gold-soft) 55%, transparent);
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-brand) 28%, transparent);
 }
 
 .cat-chip {
@@ -342,7 +353,7 @@ body {
 
 @media (hover: hover) and (pointer: fine) {
   .search-field:hover:not(:focus) {
-    border-color: color-mix(in srgb, var(--color-gold) 55%, var(--color-line));
+    border-color: color-mix(in srgb, var(--color-brand) 55%, var(--color-line));
   }
 
   .cat-chip:hover {
@@ -382,9 +393,9 @@ body {
   }
 
   .dialog-add:hover {
-    background-color: var(--color-gold);
-    color: var(--color-ink);
-    box-shadow: 0 14px 28px -14px rgba(176, 138, 62, 0.9);
+    background-color: var(--color-brand-deep);
+    color: #ffffff;
+    box-shadow: 0 14px 28px -14px rgba(192, 39, 30, 0.9);
   }
 }
 
@@ -486,7 +497,7 @@ body {
   /* Border and shadow only: the map is a live iframe, and transforming its
      container forces a repaint that stutters while panning. */
   .visit-map:hover {
-    border-color: var(--color-gold);
+    border-color: var(--color-brand);
     box-shadow: 0 20px 40px -24px rgba(20, 17, 15, 0.5);
   }
 
@@ -504,7 +515,7 @@ body {
 }
 
 /* ---------------------------------------------------------------- admin
-   The owner's panel. Same ink/gold identity as the site so it feels like
+   The owner's panel. Same ink/red identity as the site so it feels like
    their own, but denser and plainer. Every control is at least 44px. */
 .a-btn {
   display: inline-flex;
@@ -526,7 +537,7 @@ body {
 
 .a-btn:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-gold-soft) 70%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-brand) 30%, transparent);
 }
 
 .a-btn:disabled {
@@ -558,8 +569,8 @@ body {
 
 @media (hover: hover) and (pointer: fine) {
   .a-btn-primary:not(:disabled):hover {
-    background: var(--color-gold);
-    color: var(--color-ink);
+    background: var(--color-brand-deep);
+    color: #ffffff;
   }
 
   .a-btn-ghost:not(:disabled):hover {
@@ -574,7 +585,7 @@ body {
   }
 
   .a-row:hover {
-    background: color-mix(in srgb, var(--color-gold-soft) 22%, transparent);
+    background: color-mix(in srgb, var(--color-brand-soft) 45%, transparent);
   }
 }
 
@@ -595,8 +606,8 @@ body {
 
 .a-input:focus {
   outline: none;
-  border-color: var(--color-gold);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-gold-soft) 55%, transparent);
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-brand) 28%, transparent);
 }
 
 /* Skeleton rows while the menu loads, so the panel never sits blank. */
@@ -666,3 +677,36 @@ body {
 /* Logical properties only — keeps the Arabic RTL layout honest. */
 .no-scrollbar { scrollbar-width: none; }
 .no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* ---------------------------------------------------------------- offers band
+   The deals sit at the top of the Take Away menu. The band marks them as a
+   promotion rather than just another category, without leaving the palette.
+
+   The tint is why the description inside uses ink-soft and not muted: muted is
+   4.59:1 on ivory, so any gold tint under it drops below AA. */
+.offers-band {
+  border-radius: 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--color-gold) 45%, var(--color-line));
+  background: color-mix(in srgb, var(--color-gold-soft) 30%, var(--color-ivory));
+  padding: 1.5rem 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .offers-band {
+    padding: 2rem 1.75rem;
+  }
+}
+
+.offers-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  border-radius: 999px;
+  /* Ink on gold is 5.87:1. Ivory on gold would be 3.00:1 and fail. */
+  background: var(--color-gold);
+  color: var(--color-ink);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

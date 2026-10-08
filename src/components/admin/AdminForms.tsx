@@ -3,7 +3,18 @@
 import { useState } from "react";
 import { MENU_TYPES } from "@/lib/types";
 import type { MenuType } from "@/lib/types";
-import { changePassword, removeCategory, saveCategory, saveItem, saveRestaurant, uploadImage } from "@/lib/admin";
+import {
+  changePassword,
+  FAVOURITES_SHOWN,
+  removeCategory,
+  saveCategory,
+  saveFavouriteOrder,
+  saveItem,
+  saveRestaurant,
+  setFavourite,
+  uploadImage,
+} from "@/lib/admin";
+import { favouritesOf, moveBy } from "@/lib/favourites";
 import type { AdminCategory, AdminItem } from "@/lib/admin";
 import { passwordProblem } from "@/lib/password";
 
@@ -556,5 +567,150 @@ export function PasswordEditor({ onSay }: { onSay: Say }) {
         {busy ? "Changing…" : "Change password"}
       </button>
     </form>
+  );
+}
+
+/**
+ * Guest favourites — the row on the homepage. Add, remove and reorder here
+ * instead of hunting the "Featured" toggle through 167 dish forms.
+ */
+export function FavouritesEditor({
+  items,
+  onDone,
+  onSay,
+}: {
+  items: AdminItem[];
+  onDone: () => Promise<void> | void;
+  onSay: Say;
+}) {
+  const [busy, setBusy] = useState(false);
+  const [adding, setAdding] = useState("");
+
+  const chosen = favouritesOf(items);
+  const rest = items.filter((i) => !i.is_featured).sort((a, b) => a.name.localeCompare(b.name));
+
+  const run = async (work: () => Promise<void>, done: string) => {
+    setBusy(true);
+    try {
+      await work();
+      await onDone();
+      onSay(done);
+    } catch (err) {
+      onSay((err as Error).message, "bad");
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const move = (index: number, delta: number) => {
+    const next = moveBy(chosen, index, delta);
+    if (next === chosen) return;
+    run(() => saveFavouriteOrder(next.map((i) => i.id)), "Order saved");
+  };
+
+  return (
+    <div className="max-w-2xl space-y-5">
+      <div>
+        <h1 className="font-display text-2xl">Guest favourites</h1>
+        <p className="mt-1 text-sm text-muted">
+          The row on the homepage. The first {FAVOURITES_SHOWN} are shown, in this order.
+          Marking a dish “Best seller” only adds its badge — it does not put it here.
+        </p>
+      </div>
+
+      <label className="block text-sm">
+        Add a dish
+        <div className="mt-1 flex gap-2">
+          <select
+            value={adding}
+            onChange={(e) => setAdding(e.target.value)}
+            className="a-input"
+            disabled={busy || rest.length === 0}
+          >
+            <option value="">{rest.length ? "Choose a dish…" : "Every dish is already here"}</option>
+            {rest.map((i) => (
+              <option key={i.id} value={i.id}>
+                {i.name}
+                {i.is_available ? "" : " (sold out)"}
+              </option>
+            ))}
+          </select>
+          <button
+            type="button"
+            disabled={busy || !adding}
+            onClick={() => {
+              const id = adding;
+              setAdding("");
+              run(() => setFavourite(id, true, chosen.length), "Added to favourites");
+            }}
+            className="a-btn a-btn-primary shrink-0"
+          >
+            Add
+          </button>
+        </div>
+      </label>
+
+      {chosen.length === 0 ? (
+        <p className="rounded-lg border border-line bg-surface p-4 text-sm text-muted">
+          Nothing here yet, so the homepage hides the section entirely. Add a few dishes above.
+        </p>
+      ) : (
+        <ol className="space-y-2">
+          {chosen.map((item, index) => (
+            <li
+              key={item.id}
+              className={
+                "flex items-center gap-3 rounded-lg border border-line bg-surface p-3" +
+                (index >= FAVOURITES_SHOWN ? " opacity-60" : "")
+              }
+            >
+              <span className="w-6 text-center text-sm text-muted">{index + 1}</span>
+
+              {item.image_url ? (
+                /* eslint-disable-next-line @next/next/no-img-element */
+                <img src={item.image_url} alt="" className="h-10 w-10 rounded object-cover" />
+              ) : (
+                <span className="h-10 w-10 rounded bg-line" />
+              )}
+
+              <span className="min-w-0 flex-1 truncate text-sm">
+                {item.name}
+                {!item.is_available && <span className="ms-2 text-xs text-muted">sold out</span>}
+                {index >= FAVOURITES_SHOWN && (
+                  <span className="ms-2 text-xs text-muted">below the cut</span>
+                )}
+              </span>
+
+              <button
+                type="button"
+                disabled={busy || index === 0}
+                onClick={() => move(index, -1)}
+                aria-label={`Move ${item.name} up`}
+                className="a-btn a-btn-ghost"
+              >
+                ↑
+              </button>
+              <button
+                type="button"
+                disabled={busy || index === chosen.length - 1}
+                onClick={() => move(index, 1)}
+                aria-label={`Move ${item.name} down`}
+                className="a-btn a-btn-ghost"
+              >
+                ↓
+              </button>
+              <button
+                type="button"
+                disabled={busy}
+                onClick={() => run(() => setFavourite(item.id, false), "Removed from favourites")}
+                className="a-btn a-btn-danger"
+              >
+                Remove
+              </button>
+            </li>
+          ))}
+        </ol>
+      )}
+    </div>
   );
 }

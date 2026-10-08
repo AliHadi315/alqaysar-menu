@@ -56,7 +56,7 @@ export function ItemDialog({
             type="button"
             onClick={onClose}
             aria-label={t("dialog.close")}
-            className="dialog-close absolute end-3 top-3 h-11 w-11 rounded-full bg-surface/90 text-xl leading-none shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+            className="dialog-close absolute end-3 top-3 h-11 w-11 rounded-full bg-surface/90 text-xl leading-none shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
           >
             ×
           </button>
@@ -80,7 +80,7 @@ export function ItemDialog({
                 onAdd(item);
                 onClose();
               }}
-              className="dialog-add mt-2 w-full rounded-full bg-ink px-6 py-3 text-center text-sm font-medium text-ivory focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+              className="dialog-add mt-2 w-full rounded-full bg-ink px-6 py-3 text-center text-sm font-medium text-ivory focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
             >
               {t("dialog.add")}
             </button>

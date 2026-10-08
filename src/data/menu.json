@@ -172,6 +172,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -193,6 +194,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -213,6 +215,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -233,6 +236,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -253,6 +257,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -273,6 +278,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -294,6 +300,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -314,6 +321,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -334,6 +342,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -354,6 +363,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -374,6 +384,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -394,6 +405,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -414,6 +426,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -434,6 +447,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -455,6 +469,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -476,6 +491,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -496,6 +512,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -516,6 +533,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": true,
+      "featured_order": 0,
       "is_best_seller": true,
       "is_recommended": false,
       "is_spicy": false
@@ -536,6 +554,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -555,6 +574,7 @@
       "category_slug": "sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -576,6 +596,7 @@
       "category_slug": "salad",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -597,6 +618,7 @@
       "category_slug": "salad",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -618,6 +640,7 @@
       "category_slug": "salad",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -639,6 +662,7 @@
       "category_slug": "salad",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -660,6 +684,7 @@
       "category_slug": "salad",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -681,6 +706,7 @@
       "category_slug": "salad",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -701,6 +727,7 @@
       "category_slug": "burgers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -721,6 +748,7 @@
       "category_slug": "burgers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -741,6 +769,7 @@
       "category_slug": "burgers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -761,6 +790,7 @@
       "category_slug": "burgers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -781,6 +811,7 @@
       "category_slug": "burgers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -801,6 +832,7 @@
       "category_slug": "burgers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -822,6 +854,7 @@
       "category_slug": "cold-appetizer",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -843,6 +876,7 @@
       "category_slug": "cold-appetizer",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -863,6 +897,7 @@
       "category_slug": "cold-appetizer",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -884,6 +919,7 @@
       "category_slug": "hot-appetizer",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -905,6 +941,7 @@
       "category_slug": "hot-appetizer",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -926,6 +963,7 @@
       "category_slug": "hot-appetizer",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -947,6 +985,7 @@
       "category_slug": "hot-appetizer",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -968,6 +1007,7 @@
       "category_slug": "hot-appetizer",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -988,6 +1028,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1009,6 +1050,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1028,6 +1070,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1048,6 +1091,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1067,6 +1111,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1087,6 +1132,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1108,6 +1154,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1128,6 +1175,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1148,6 +1196,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1168,6 +1217,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1188,6 +1238,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1208,6 +1259,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1228,6 +1280,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1248,6 +1301,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1268,6 +1322,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1289,6 +1344,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1310,6 +1366,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1331,6 +1388,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1352,6 +1410,7 @@
       "category_slug": "grilled-platers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1372,6 +1431,7 @@
       "category_slug": "grilled-sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1393,6 +1453,7 @@
       "category_slug": "grilled-sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1414,6 +1475,7 @@
       "category_slug": "grilled-sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1434,6 +1496,7 @@
       "category_slug": "grilled-sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1454,6 +1517,7 @@
       "category_slug": "grilled-sandwiches",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1475,6 +1539,7 @@
       "category_slug": "cold-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1496,6 +1561,7 @@
       "category_slug": "cold-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1517,6 +1583,7 @@
       "category_slug": "cold-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1538,6 +1605,7 @@
       "category_slug": "cold-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1558,6 +1626,7 @@
       "category_slug": "cold-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1579,6 +1648,7 @@
       "category_slug": "cold-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1597,6 +1667,7 @@
       "category_slug": "cold-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1618,6 +1689,7 @@
       "category_slug": "hot-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1639,6 +1711,7 @@
       "category_slug": "hot-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1660,6 +1733,7 @@
       "category_slug": "hot-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1681,6 +1755,7 @@
       "category_slug": "hot-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1702,6 +1777,7 @@
       "category_slug": "hot-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1723,6 +1799,7 @@
       "category_slug": "hot-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1744,6 +1821,7 @@
       "category_slug": "hot-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1765,6 +1843,7 @@
       "category_slug": "hot-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1784,6 +1863,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1803,6 +1883,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1822,6 +1903,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1841,6 +1923,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1860,6 +1943,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1879,6 +1963,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1898,6 +1983,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1917,6 +2003,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1936,6 +2023,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1955,6 +2043,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1974,6 +2063,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -1993,6 +2083,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2012,6 +2103,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2031,6 +2123,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2050,6 +2143,7 @@
       "category_slug": "narguileh",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2071,6 +2165,7 @@
       "category_slug": "extras",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2092,6 +2187,7 @@
       "category_slug": "extras",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2113,6 +2209,7 @@
       "category_slug": "extras",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2134,6 +2231,7 @@
       "category_slug": "extras",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2155,6 +2253,7 @@
       "category_slug": "extras",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2176,6 +2275,7 @@
       "category_slug": "pizza",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2197,6 +2297,7 @@
       "category_slug": "pizza",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2218,6 +2319,7 @@
       "category_slug": "pizza",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2238,6 +2340,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2258,6 +2361,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2278,6 +2382,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2298,6 +2403,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2318,6 +2424,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2339,6 +2446,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2360,6 +2468,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2380,6 +2489,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2401,6 +2511,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2422,6 +2533,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2443,6 +2555,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2464,6 +2577,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2484,6 +2598,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2504,6 +2619,7 @@
       "category_slug": "shawarma",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2525,6 +2641,7 @@
       "category_slug": "broasted",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2545,6 +2662,7 @@
       "category_slug": "broasted",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2566,6 +2684,7 @@
       "category_slug": "broasted",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2586,6 +2705,7 @@
       "category_slug": "broasted",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2607,6 +2727,7 @@
       "category_slug": "broasted",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2628,6 +2749,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2649,6 +2771,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2670,6 +2793,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2691,6 +2815,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2711,6 +2836,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2732,6 +2858,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2753,6 +2880,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2774,6 +2902,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2792,6 +2921,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2810,6 +2940,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2828,6 +2959,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2846,6 +2978,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2864,6 +2997,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2882,6 +3016,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2900,6 +3035,7 @@
       "category_slug": "main-course",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2919,6 +3055,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2938,6 +3075,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2957,6 +3095,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2975,6 +3114,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -2994,6 +3134,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3013,6 +3154,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3032,6 +3174,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3051,6 +3194,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3070,6 +3214,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3088,6 +3233,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3107,6 +3253,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3126,6 +3273,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3145,6 +3293,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3164,6 +3313,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3184,6 +3334,7 @@
       "category_slug": "offers",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3205,6 +3356,7 @@
       "category_slug": "soft-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3226,6 +3378,7 @@
       "category_slug": "soft-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3247,6 +3400,7 @@
       "category_slug": "soft-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3268,6 +3422,7 @@
       "category_slug": "soft-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3289,6 +3444,7 @@
       "category_slug": "soft-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3310,6 +3466,7 @@
       "category_slug": "soft-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3331,6 +3488,7 @@
       "category_slug": "soft-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3352,6 +3510,7 @@
       "category_slug": "soft-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3373,6 +3532,7 @@
       "category_slug": "soft-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3394,6 +3554,7 @@
       "category_slug": "soft-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3415,6 +3576,7 @@
       "category_slug": "soft-drinks",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3436,6 +3598,7 @@
       "category_slug": "m-dessert",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3457,6 +3620,7 @@
       "category_slug": "m-dessert",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3478,6 +3642,7 @@
       "category_slug": "m-dessert",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3499,6 +3664,7 @@
       "category_slug": "m-dessert",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false
@@ -3520,6 +3686,7 @@
       "category_slug": "m-dessert",
       "is_available": true,
       "is_featured": false,
+      "featured_order": 0,
       "is_best_seller": false,
       "is_recommended": false,
       "is_spicy": false

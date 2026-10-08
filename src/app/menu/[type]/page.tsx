@@ -25,7 +25,7 @@ export default async function MenuPage({ params }: { params: Promise<{ type: str
   if (!menuType) notFound();
 
   const restaurant = getRestaurant();
-  const categories = getCategories();
+  const categories = getCategories(menuType);
   const items = getMenuItems(menuType);
 
   return (
@@ -50,7 +50,7 @@ export default async function MenuPage({ params }: { params: Promise<{ type: str
                 href={"/menu/" + m.slug}
                 className={
                   "rounded-full px-4 py-2 text-sm transition " +
-                  (m.type === menuType ? "bg-ink text-ivory" : "border border-line hover:border-gold")
+                  (m.type === menuType ? "bg-ink text-ivory" : "border border-line hover:border-brand")
                 }
               >
                 <T k={`type.${m.type}` as StringKey} />
