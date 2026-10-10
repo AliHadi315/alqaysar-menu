@@ -15,13 +15,10 @@ export const STRINGS = {
   "lang.switch": { en: "العربية", ar: "English" },
   "lang.label": { en: "Switch to Arabic", ar: "التبديل إلى الإنجليزية" },
 
-  "home.explore": { en: "How would you like to explore?", ar: "كيف تحب أن تتصفح القائمة؟" },
   "home.favourites": { en: "Guest favourites", ar: "الأكثر طلباً" },
   "menu.offers": { en: "Offers", ar: "عروض" },
   "home.viewMenu": { en: "View menu", ar: "تصفح القائمة" },
 
-  "menu.title": { en: "Our menu", ar: "قائمتنا" },
-  "menu.choose": { en: "Choose how you are dining today.", ar: "اختر طريقة تناولك اليوم." },
   "menu.search": { en: "Search the menu…", ar: "ابحث في القائمة…" },
   "menu.searchLabel": { en: "Search the menu", ar: "ابحث في القائمة" },
   "menu.dishes": { en: "{n} dishes", ar: "{n} صنف" },

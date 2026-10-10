@@ -17,7 +17,7 @@ export function VisitSection({ restaurant }: { restaurant: Restaurant }) {
   if (!maps && !whatsapp && !tel) return null;
 
   return (
-    <section className="mx-auto max-w-6xl px-4 pb-20">
+    <section className="mx-auto max-w-6xl px-4 pb-10 sm:pb-14 lg:pb-20">
       <Reveal>
         <h2 className="mb-6 font-display text-3xl">{t("visit.find")}</h2>
       </Reveal>

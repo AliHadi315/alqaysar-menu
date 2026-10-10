@@ -9,7 +9,7 @@ export function Footer({ restaurant }: { restaurant: Restaurant | null }) {
   const whatsapp = restaurant ? enquiryUrl(restaurant) : null;
   return (
     <footer id="visit" className="border-t border-line bg-surface">
-      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-2 sm:py-12 lg:grid-cols-4">
         <div>
           <p className="font-display text-xl">{restaurant?.name ?? "Al Qaysr"}</p>
           {restaurant?.tagline && <p className="mt-2 text-sm text-muted">{restaurant.tagline}</p>}

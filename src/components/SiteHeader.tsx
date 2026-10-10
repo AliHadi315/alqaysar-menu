@@ -16,7 +16,7 @@ export function SiteHeader({ name, logoUrl }: { name: string; logoUrl?: string |
           <span className="brand-name font-display text-xl tracking-wide">{name}</span>
         </Link>
         <nav className="flex items-center gap-4 text-sm">
-          <Link href="/menu" className="link-underline">{t("nav.menu")}</Link>
+          <Link href="/menu/takeaway" className="link-underline">{t("nav.menu")}</Link>
           <Link href="/#visit" className="link-underline">{t("nav.visit")}</Link>
           <LanguageToggle />
         </nav>
