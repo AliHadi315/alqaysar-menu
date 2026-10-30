@@ -60,7 +60,15 @@ try {
       lbp_rate: Number(restaurant.data.lbp_rate ?? 90000),
       // Absent before 0004, in which case fall back to the areas the migration
       // seeds. An explicit [] means the owner removed them all, so it is kept.
-      delivery_zones: restaurant.data.delivery_zones ?? DEFAULT_ZONES,
+      //
+      // Rebuilt key by key on purpose: Postgres hands jsonb back with its keys
+      // sorted, so passing the object straight through would rewrite this file
+      // on every build for no reason.
+      delivery_zones: (restaurant.data.delivery_zones ?? DEFAULT_ZONES).map((z) => ({
+        name: z.name,
+        name_ar: z.name_ar ?? null,
+        fee: Number(z.fee) || 0,
+      })),
     },
     categories: categories.data.map(({ id, updated_at, is_active, ...c }) => c),
     items: items.data.map((i) => ({
