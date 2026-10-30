@@ -1,3 +1,5 @@
+# Not indexed yet: this menu names a real restaurant, its address and its phone
+# number, and the owner has not approved it being published. Swap Disallow for
+# "Allow: /" once they have.
 User-agent: *
-Disallow: /admin/
-Allow: /
+Disallow: /

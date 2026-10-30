@@ -25,6 +25,7 @@ export function MenuBrowser({
 }) {
   const { t } = useLang();
   const currency = restaurant.currency;
+  const lbpRate = restaurant.lbp_rate;
   const [lines, setLines] = useState<OrderLine[]>([]);
 
   // Restore after mount: the page is statically rendered, so this must not run on the server.
@@ -111,7 +112,7 @@ export function MenuBrowser({
           ) : (
             <>
               <p className="mb-4 text-sm text-muted">{t("menu.results", { n: results.length })}</p>
-              <Grid items={results} currency={currency} onOpen={setActive} onAdd={addItem} qtyOf={qtyOf} />
+              <Grid items={results} currency={currency} lbpRate={lbpRate} onOpen={setActive} onAdd={addItem} qtyOf={qtyOf} />
             </>
           )
         ) : sections.length === 0 ? (
@@ -138,7 +139,7 @@ export function MenuBrowser({
                     </p>
                   )}
                   <div className="mt-4">
-                    <Grid items={catItems} currency={currency} onOpen={setActive} onAdd={addItem} qtyOf={qtyOf} />
+                    <Grid items={catItems} currency={currency} lbpRate={lbpRate} onOpen={setActive} onAdd={addItem} qtyOf={qtyOf} />
                   </div>
                 </Reveal>
               </section>
@@ -168,12 +169,14 @@ export function MenuBrowser({
 function Grid({
   items,
   currency,
+  lbpRate,
   onOpen,
   onAdd,
   qtyOf,
 }: {
   items: PricedItem[];
   currency: string;
+  lbpRate?: number;
   onOpen: (item: PricedItem) => void;
   onAdd: (item: PricedItem) => void;
   qtyOf: (slug: string) => number;
@@ -190,6 +193,7 @@ function Grid({
               key={item.slug}
               item={item}
               currency={currency}
+              lbpRate={lbpRate}
               qty={qtyOf(item.slug)}
               onOpen={() => onOpen(item)}
               onAdd={() => onAdd(item)}
@@ -199,7 +203,7 @@ function Grid({
       )}
 
       {withoutPhoto.length > 0 && (
-        <MenuList items={withoutPhoto} currency={currency} qtyOf={qtyOf} onOpen={onOpen} onAdd={onAdd} />
+        <MenuList items={withoutPhoto} currency={currency} lbpRate={lbpRate} qtyOf={qtyOf} onOpen={onOpen} onAdd={onAdd} />
       )}
     </div>
   );

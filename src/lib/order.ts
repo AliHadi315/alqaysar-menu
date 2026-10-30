@@ -1,4 +1,4 @@
-import { formatPrice } from "@/lib/format";
+import { formatLbp, formatPrice } from "@/lib/format";
 import { whatsappUrl } from "@/lib/contact";
 import { MENU_TYPES } from "@/lib/types";
 import type { MenuType, Restaurant } from "@/lib/types";
@@ -15,13 +15,19 @@ export const orderCount = (lines: OrderLine[]) =>
 export function orderMessage(restaurant: Restaurant, menuType: MenuType, lines: OrderLine[]) {
   const label = MENU_TYPES.find((m) => m.type === menuType)!.label;
   const body = lines
-    .map((l) => `• ${l.qty} × ${l.name} — ${formatPrice(l.price * l.qty, restaurant.currency)}`)
+    .map((l) => {
+      const lbp = formatLbp(l.price * l.qty, restaurant.lbp_rate);
+      return `• ${l.qty} × ${l.name} — ${formatPrice(l.price * l.qty, restaurant.currency)}` + (lbp ? ` (${lbp})` : "");
+    })
     .join("\n");
 
   return (
     `Hello ${restaurant.name}, I'd like to order (${label}):\n\n` +
     `${body}\n\n` +
-    `Total: ${formatPrice(orderTotal(lines), restaurant.currency)}`
+    `Total: ${formatPrice(orderTotal(lines), restaurant.currency)}` +
+    (formatLbp(orderTotal(lines), restaurant.lbp_rate)
+      ? ` (${formatLbp(orderTotal(lines), restaurant.lbp_rate)})`
+      : "")
   );
 }
 

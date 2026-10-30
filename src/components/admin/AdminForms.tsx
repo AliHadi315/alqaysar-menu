@@ -406,6 +406,7 @@ const SETTING_FIELDS: { key: string; label: string; type?: string }[] = [
   { key: "tagline", label: "Tagline" },
   { key: "established", label: "Line above the name (e.g. Since 2015)" },
   { key: "currency", label: "Currency symbol" },
+  { key: "lbp_rate", label: "Lira per dollar (shown under every price)", type: "number" },
   { key: "phone", label: "Phone" },
   { key: "whatsapp", label: "WhatsApp number (international)" },
   { key: "email", label: "Email", type: "email" },
@@ -438,6 +439,12 @@ export function SettingsEditor({
         try {
           const payload: Record<string, unknown> = { address: address.trim() || null };
           for (const f of SETTING_FIELDS) payload[f.key] = values[f.key].trim() || null;
+
+          // lbp_rate is NOT NULL and numeric: an empty or junk box has to leave
+          // the stored rate alone rather than blanking every lira price.
+          const rate = Number(values.lbp_rate);
+          if (Number.isFinite(rate) && rate > 0) payload.lbp_rate = rate;
+          else delete payload.lbp_rate;
           await saveRestaurant(restaurant.id as string, payload);
           await onDone();
           onSay("Restaurant details saved");

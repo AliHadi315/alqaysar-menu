@@ -1,5 +1,5 @@
 import type { MenuType, PricedItem, Restaurant } from "@/lib/types";
-import { formatPrice } from "@/lib/format";
+import { formatLbp, formatPrice } from "@/lib/format";
 import { MENU_TYPES } from "@/lib/types";
 
 /** Digits only, country code first — what wa.me expects. */
@@ -20,6 +20,7 @@ export function orderItemUrl(restaurant: Restaurant, item: PricedItem, menuType?
     restaurant,
     `Hello ${restaurant.name}, I'd like to order:\n\n` +
       `• ${item.name} — ${formatPrice(item.price, restaurant.currency)}` +
+      (formatLbp(item.price, restaurant.lbp_rate) ? ` (${formatLbp(item.price, restaurant.lbp_rate)})` : "") +
       (where ? `\n\n(${where})` : "")
   );
 }

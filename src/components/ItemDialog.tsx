@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { Badge } from "@/components/Badge";
 import { useLang } from "@/components/LanguageProvider";
-import { formatPrice } from "@/lib/format";
+import { formatLbp, formatPrice } from "@/lib/format";
 import type { PricedItem, Restaurant } from "@/lib/types";
 
 export function ItemDialog({
@@ -32,6 +32,7 @@ export function ItemDialog({
   if (!item) return null;
 
   const currency = restaurant.currency;
+  const lbp = formatLbp(item?.price ?? 0, restaurant.lbp_rate);
 
   return (
     <div
@@ -71,6 +72,7 @@ export function ItemDialog({
           </div>
           <h2 className="font-display text-2xl">{item.name}</h2>
           <p className="text-xl font-semibold">{formatPrice(item.price, currency)}</p>
+          {lbp && <p className="-mt-1 text-sm text-muted">{lbp}</p>}
           {item.description && <p className="leading-relaxed text-ink-soft">{item.description}</p>}
 
           {item.is_available && (

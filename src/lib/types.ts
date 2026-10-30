@@ -58,6 +58,8 @@ export type Restaurant = {
   /** Short claims under the hero. Empty hides the row. */
   badges: string[];
   currency: string;
+  /** Lira per dollar, shown beside every price. The owner edits it in Settings. */
+  lbp_rate?: number;
   phone: string | null;
   email: string | null;
   address: string | null;

@@ -6,7 +6,7 @@ import { RestaurantJsonLd } from "@/components/StructuredData";
 import { T } from "@/components/LanguageProvider";
 import { Reveal } from "@/components/Reveal";
 import { getFeatured, getRestaurant } from "@/lib/menu";
-import { formatPrice } from "@/lib/format";
+import { formatLbp, formatPrice } from "@/lib/format";
 
 export default function HomePage() {
   const restaurant = getRestaurant();
@@ -104,6 +104,9 @@ export default function HomePage() {
                 <div className="p-4">
                   <h3 className="font-display text-base">{item.name}</h3>
                   <p className="mt-1 text-sm font-semibold">{formatPrice(item.price, currency)}</p>
+                  {formatLbp(item.price, restaurant.lbp_rate) && (
+                    <p className="text-xs text-muted">{formatLbp(item.price, restaurant.lbp_rate)}</p>
+                  )}
                 </div>
               </article>
             ))}

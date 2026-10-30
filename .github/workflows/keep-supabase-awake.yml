@@ -1,0 +1,41 @@
+# Supabase pauses a free project after 7 days with no requests, which kills the
+# admin panel until someone resumes it by hand. One cheap read every three days
+# keeps the timer from ever reaching seven.
+#
+# The key below is the anon key. It is public by design — it already ships
+# inside the site's JavaScript — and every write is gated by row level security
+# against the signed-in user, so publishing it here grants nothing. The
+# service_role key must never appear in this file.
+#
+# Caveat worth knowing: GitHub disables scheduled workflows after 60 days with
+# no commits to the repository, and only emails you about it. If this project
+# goes quiet, re-enable it in the Actions tab, or move the ping to an external
+# monitor that does not have that rule.
+name: Keep Supabase awake
+
+on:
+  schedule:
+    # 06:00 UTC every third day. Twice the margin Supabase's 7-day timer needs,
+    # so one skipped run is harmless.
+    - cron: "0 6 */3 * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read one row
+        run: |
+          URL="https://ttbkgyeuedxadrfybkfv.supabase.co/rest/v1/categories?select=slug&limit=1"
+          KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR0YmtneWV1ZWR4YWRyZnlia2Z2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk1MDQxNDcsImV4cCI6MjEwNTA4MDE0N30.C9jd72AxSzaLm0nvB7Qi6_lfst9XpdBYJ6juiYgBcK4"
+
+          code=$(curl -s -o /tmp/body -w '%{http_code}' --max-time 30 -H "apikey: $KEY" "$URL")
+          echo "HTTP $code"
+          head -c 200 /tmp/body; echo
+
+          # Fail loudly rather than reporting a green tick for a dead project:
+          # a paused or deleted project is exactly what this job exists to catch.
+          if [ "$code" != "200" ]; then
+            echo "::error::Supabase did not answer with 200. The project may be paused, deleted, or the anon key rotated."
+            exit 1
+          fi

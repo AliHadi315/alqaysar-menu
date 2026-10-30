@@ -2,7 +2,7 @@
 
 import { Badge } from "@/components/Badge";
 import { useLang } from "@/components/LanguageProvider";
-import { formatPrice } from "@/lib/format";
+import { formatLbp, formatPrice } from "@/lib/format";
 import type { PricedItem } from "@/lib/types";
 
 /**
@@ -13,12 +13,14 @@ import type { PricedItem } from "@/lib/types";
 export function MenuList({
   items,
   currency,
+  lbpRate,
   qtyOf,
   onOpen,
   onAdd,
 }: {
   items: PricedItem[];
   currency: string;
+  lbpRate?: number;
   qtyOf: (slug: string) => number;
   onOpen: (item: PricedItem) => void;
   onAdd: (item: PricedItem) => void;
@@ -39,7 +41,12 @@ export function MenuList({
               <span className="flex items-baseline gap-2">
                 <span className="menu-row-name font-display text-lg leading-snug transition-colors">{item.name}</span>
                 <span aria-hidden className="min-w-4 flex-1 translate-y-[-0.25rem] border-b border-dotted border-line" />
-                <span className="font-semibold tabular-nums">{formatPrice(item.price, currency)}</span>
+                <span className="flex flex-col items-end">
+                  <span className="font-semibold tabular-nums">{formatPrice(item.price, currency)}</span>
+                  {formatLbp(item.price, lbpRate) && (
+                    <span className="whitespace-nowrap text-xs font-normal text-muted tabular-nums">{formatLbp(item.price, lbpRate)}</span>
+                  )}
+                </span>
               </span>
 
               {item.description && (

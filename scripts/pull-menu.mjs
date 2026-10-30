@@ -46,7 +46,11 @@ try {
   if (!items.data?.length) throw new Error("no dishes returned");
 
   const menu = {
-    restaurant: (({ id, updated_at, ...rest }) => rest)(restaurant.data),
+    restaurant: {
+      ...(({ id, updated_at, ...rest }) => rest)(restaurant.data),
+      // numeric arrives as a string, and the column is absent before 0003.
+      lbp_rate: Number(restaurant.data.lbp_rate ?? 90000),
+    },
     categories: categories.data.map(({ id, updated_at, is_active, ...c }) => c),
     items: items.data.map((i) => ({
       slug: i.slug,

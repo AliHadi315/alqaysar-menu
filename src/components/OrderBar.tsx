@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useLang } from "@/components/LanguageProvider";
-import { formatPrice } from "@/lib/format";
+import { formatLbp, formatPrice } from "@/lib/format";
 import { orderCount, orderTotal, orderUrl } from "@/lib/order";
 import type { OrderLine } from "@/lib/order";
 import type { MenuType, Restaurant } from "@/lib/types";
@@ -27,6 +27,7 @@ export function OrderBar({
   const href = orderUrl(restaurant, menuType, lines);
   const count = orderCount(lines);
   const currency = restaurant.currency;
+  const lbpRate = restaurant.lbp_rate;
 
   return (
     <div className="order-bar-enter fixed inset-x-0 bottom-0 z-40 border-t border-line bg-surface/97 backdrop-blur">
@@ -37,7 +38,10 @@ export function OrderBar({
               <li key={l.slug} className="flex items-center gap-3 py-3">
                 <div className="min-w-0 flex-1">
                   <p className="truncate text-sm font-medium">{l.name}</p>
-                  <p className="text-sm text-muted">{formatPrice(l.price, currency)}</p>
+                  <p className="text-sm text-muted">
+                    {formatPrice(l.price, currency)}
+                    {formatLbp(l.price, lbpRate) && <> · {formatLbp(l.price, lbpRate)}</>}
+                  </p>
                 </div>
                 <div className="flex items-center gap-2">
                   <button
@@ -76,6 +80,9 @@ export function OrderBar({
         >
           <span className="review-total block text-sm font-medium transition-colors">
             {t(count === 1 ? "order.item" : "order.items", { n: count })} · {formatPrice(orderTotal(lines), currency)}
+            {formatLbp(orderTotal(lines), lbpRate) && (
+              <span className="font-normal text-muted"> · {formatLbp(orderTotal(lines), lbpRate)}</span>
+            )}
           </span>
           <span className="block text-xs text-muted">{open ? t("order.hide") : t("order.review")}</span>
         </button>

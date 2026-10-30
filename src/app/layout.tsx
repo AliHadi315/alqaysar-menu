@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: "Al Qaysr — Grills, Shawarma & Sandwiches",
   description: "The Al Qaysr menu in Chiyah, Beirut — charcoal grills, shawarma, sandwiches and shisha. Browse the take away and dine-in menus.",
   openGraph: { title: "Al Qaysr", description: "Charcoal grills, shawarma and sandwiches in Chiyah, Beirut.", type: "website" },
+  // Kept out of search until the restaurant has seen this and agreed to it.
+  // The structured data below names a real business, its address and its
+  // phone number, so it should not be indexed as their official menu
+  // before they say so. Remove this block to publish.
+  robots: { index: false, follow: false },
 };
 
 // Paints the phone's browser chrome in the logo red. icon.png and apple-icon.png

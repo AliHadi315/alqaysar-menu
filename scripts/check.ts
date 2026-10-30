@@ -1,6 +1,6 @@
 // Smallest thing that fails if the menu helpers break: node scripts/check.ts
 import assert from "node:assert/strict";
-import { formatPrice, slugify } from "../src/lib/format.ts";
+import { formatLbp, formatPrice, slugify } from "../src/lib/format.ts";
 import { menuTypeFromSlug, MENU_TYPES } from "../src/lib/types.ts";
 import { passwordProblem } from "../src/lib/password.ts";
 import { favouritesOf, moveBy } from "../src/lib/favourites.ts";
@@ -59,5 +59,17 @@ const edge = [1, 2, 3];
 assert.equal(moveBy(edge, 0, -1), edge, "first item cannot move up");
 assert.equal(moveBy(edge, 2, 1), edge, "last item cannot move down");
 assert.equal(moveBy(edge, 9, 1), edge, "index outside the list is a no-op");
+
+// Lira conversion: rounded to the nearest 10,000, the way the kitchen prints it.
+assert.equal(formatLbp(20, 90000), "1,800,000 L.L.");        // matches their own offer photos
+assert.equal(formatLbp(11.11, 90000), "1,000,000 L.L.");     // 999,900 would read as a mistake
+assert.equal(formatLbp(4.44, 90000), "400,000 L.L.");        // 399,600 rounds up
+assert.equal(formatLbp("3.80", 90000), "340,000 L.L.");      // strings arrive from PostgREST
+assert.equal(formatLbp(0, 90000), "0 L.L.");
+// A missing or nonsense rate hides the line instead of printing NaN.
+assert.equal(formatLbp(20, undefined), "");
+assert.equal(formatLbp(20, 0), "");
+assert.equal(formatLbp(20, -1), "");
+assert.equal(formatLbp("not a price", 90000), "");
 
 console.log("checks passed");

@@ -25,7 +25,8 @@
     "menu_images": {
       "TABLES": "/menu/8-mashewe.webp",
       "TAKE_AWAY": "/menu/1001766469.webp"
-    }
+    },
+    "lbp_rate": 90000
   },
   "categories": [
     {

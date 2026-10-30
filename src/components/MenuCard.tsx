@@ -2,18 +2,20 @@
 
 import { Badge } from "@/components/Badge";
 import { useLang } from "@/components/LanguageProvider";
-import { formatPrice } from "@/lib/format";
+import { formatLbp, formatPrice } from "@/lib/format";
 import type { PricedItem } from "@/lib/types";
 
 export function MenuCard({
   item,
   currency,
+  lbpRate,
   qty,
   onOpen,
   onAdd,
 }: {
   item: PricedItem;
   currency: string;
+  lbpRate?: number;
   qty: number;
   onOpen: () => void;
   onAdd: () => void;
@@ -55,7 +57,12 @@ export function MenuCard({
           </div>
           <h3 className="font-display text-lg leading-snug">{item.name}</h3>
           {item.description && <p className="line-clamp-2 text-sm text-muted">{item.description}</p>}
-          <p className="mt-auto pe-10 pt-2 text-base font-semibold text-ink">{formatPrice(item.price, currency)}</p>
+          <div className="mt-auto pe-10 pt-2">
+            <p className="text-base font-semibold text-ink">{formatPrice(item.price, currency)}</p>
+            {formatLbp(item.price, lbpRate) && (
+              <p className="whitespace-nowrap text-xs text-muted">{formatLbp(item.price, lbpRate)}</p>
+            )}
+          </div>
         </div>
       </button>
 
