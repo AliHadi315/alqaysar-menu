@@ -26,7 +26,24 @@
       "TABLES": "/menu/8-mashewe.webp",
       "TAKE_AWAY": "/menu/1001766469.webp"
     },
-    "lbp_rate": 90000
+    "lbp_rate": 90000,
+    "delivery_zones": [
+      {
+        "name": "Dahye",
+        "name_ar": "الضاحية",
+        "fee": 4
+      },
+      {
+        "name": "Beirut",
+        "name_ar": "بيروت",
+        "fee": 5
+      },
+      {
+        "name": "Mount Lebanon",
+        "name_ar": "جبل لبنان",
+        "fee": 7
+      }
+    ]
   },
   "categories": [
     {

@@ -11,7 +11,7 @@ import {
   PasswordEditor,
   FavouritesEditor,
 } from "@/components/admin/AdminForms";
-import { MENU_TYPES } from "@/lib/types";
+import { PRICE_LISTS } from "@/lib/types";
 
 type View = "items" | "favourites" | "categories" | "settings";
 export type Notice = { text: string; kind: "ok" | "bad" } | null;
@@ -164,8 +164,8 @@ export function AdminApp() {
                 <h1 className="font-display text-2xl">
                   {items.length} dishes
                   <span className="ms-2 text-sm text-muted">
-                    {MENU_TYPES.map(
-                      (m) => items.filter((i) => i.prices[m.type] != null).length + " " + m.label
+                    {PRICE_LISTS.map(
+                      (m) => items.filter((i) => i.prices[m.list] != null).length + " " + m.label
                     ).join(" · ")}
                   </span>
                 </h1>
@@ -339,8 +339,8 @@ function ItemRow({
         </p>
         <p className="text-sm text-muted">
           {category ? category + " · " : ""}
-          {MENU_TYPES.filter((m) => item.prices[m.type] != null)
-            .map((m) => m.label + " " + item.prices[m.type])
+          {PRICE_LISTS.filter((m) => item.prices[m.list] != null)
+            .map((m) => m.label + " " + item.prices[m.list])
             .join(" · ") || "on no menu"}
         </p>
       </div>

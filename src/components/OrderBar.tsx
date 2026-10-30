@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { useLang } from "@/components/LanguageProvider";
 import { formatLbp, formatPrice } from "@/lib/format";
-import { orderCount, orderTotal, orderUrl } from "@/lib/order";
+import { orderCount, orderTotal } from "@/lib/order";
+import { CheckoutSheet } from "@/components/CheckoutSheet";
 import type { OrderLine } from "@/lib/order";
 import type { MenuType, Restaurant } from "@/lib/types";
 
@@ -22,9 +23,9 @@ export function OrderBar({
 }) {
   const { t } = useLang();
   const [open, setOpen] = useState(false);
+  const [checkout, setCheckout] = useState(false);
   if (lines.length === 0) return null;
 
-  const href = orderUrl(restaurant, menuType, lines);
   const count = orderCount(lines);
   const currency = restaurant.currency;
   const lbpRate = restaurant.lbp_rate;
@@ -87,17 +88,24 @@ export function OrderBar({
           <span className="block text-xs text-muted">{open ? t("order.hide") : t("order.review")}</span>
         </button>
 
-        {href && (
-          <a
-            href={href}
-            target="_blank"
-            rel="noreferrer"
+        {restaurant.whatsapp && (
+          <button
+            type="button"
+            onClick={() => setCheckout(true)}
             className="send-btn rounded-full bg-[#25D366] px-6 py-3 text-sm font-medium text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
           >
             {t("order.send")}
-          </a>
+          </button>
         )}
       </div>
+
+      <CheckoutSheet
+        open={checkout}
+        lines={lines}
+        restaurant={restaurant}
+        menuType={menuType}
+        onClose={() => setCheckout(false)}
+      />
     </div>
   );
 }

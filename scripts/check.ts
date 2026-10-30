@@ -4,6 +4,8 @@ import { formatLbp, formatPrice, slugify } from "../src/lib/format.ts";
 import { menuTypeFromSlug, MENU_TYPES } from "../src/lib/types.ts";
 import { passwordProblem } from "../src/lib/password.ts";
 import { favouritesOf, moveBy } from "../src/lib/favourites.ts";
+import { checkoutProblem, deliveryFeeFor, needsAddress } from "../src/lib/checkout.ts";
+import { PRICE_LIST } from "../src/lib/types.ts";
 
 // Prices arrive from PostgREST as numbers or strings; both must render.
 assert.equal(formatPrice(260, "P"), "P260.00");
@@ -18,7 +20,14 @@ assert.equal(slugify("Shisha / Cigarette"), "shisha-cigarette");
 assert.equal(menuTypeFromSlug("takeaway"), "TAKE_AWAY");
 assert.equal(menuTypeFromSlug("tables"), "TABLES");
 assert.equal(menuTypeFromSlug("nonsense"), null);
-assert.equal(MENU_TYPES.length, 2);
+// Three things a customer can pick, each resolving to a stored price list,
+// each with its own route. A count alone would not have caught a bad mapping.
+assert.equal(MENU_TYPES.length, 3);
+assert.deepEqual(MENU_TYPES.map((m) => m.slug), ["takeaway", "delivery", "tables"]);
+for (const m of MENU_TYPES) {
+  assert.ok(PRICE_LIST[m.type], `${m.type} has no price list`);
+  assert.equal(menuTypeFromSlug(m.slug), m.type);
+}
 
 // Password change: quiet while empty, but nothing weak or mistyped gets through.
 assert.equal(passwordProblem("", "", ""), null);
@@ -71,5 +80,41 @@ assert.equal(formatLbp(20, undefined), "");
 assert.equal(formatLbp(20, 0), "");
 assert.equal(formatLbp(20, -1), "");
 assert.equal(formatLbp("not a price", 90000), "");
+
+// Delivery sells the take-away price list; only Tables is its own.
+assert.equal(PRICE_LIST.TAKE_AWAY, "TAKE_AWAY");
+assert.equal(PRICE_LIST.DELIVERY, "TAKE_AWAY");
+assert.equal(PRICE_LIST.TABLES, "TABLES");
+assert.equal(needsAddress("DELIVERY"), true);
+assert.equal(needsAddress("TAKE_AWAY"), false);
+assert.equal(needsAddress("TABLES"), false);
+
+const ZONES = [
+  { name: "Dahye", fee: 2 },
+  { name: "Beirut", fee: 3 },
+  { name: "Mount Lebanon", fee: 5 },
+];
+assert.equal(deliveryFeeFor(ZONES, "Beirut"), 3);
+assert.equal(deliveryFeeFor(ZONES, "Nowhere"), 0, "an unlisted area costs nothing, never a guess");
+assert.equal(deliveryFeeFor(ZONES, undefined), 0);
+assert.equal(deliveryFeeFor([], "Beirut"), 0);
+assert.equal(deliveryFeeFor([{ name: "Odd", fee: -4 }], "Odd"), 0, "a negative fee cannot discount an order");
+
+// Name and phone are needed everywhere; the address only where food is driven.
+const ok = { name: "Ali", phone: "70678929" };
+assert.equal(checkoutProblem("TAKE_AWAY", ok), null);
+assert.equal(checkoutProblem("TABLES", ok), null);
+assert.equal(checkoutProblem("TAKE_AWAY", { name: " ", phone: "70678929" }), "checkout.needName");
+assert.equal(checkoutProblem("TAKE_AWAY", { name: "Ali", phone: "" }), "checkout.needPhone");
+assert.equal(checkoutProblem("TAKE_AWAY", { name: "Ali", phone: "123" }), "checkout.needPhone");
+// Written the way people actually write Lebanese numbers.
+assert.equal(checkoutProblem("TAKE_AWAY", { name: "Ali", phone: "+961 70 678 929" }), null);
+assert.equal(checkoutProblem("TAKE_AWAY", { name: "Ali", phone: "03/123456" }), null);
+
+assert.equal(checkoutProblem("DELIVERY", ok, ZONES), "checkout.needZone");
+assert.equal(checkoutProblem("DELIVERY", { ...ok, zone: "Beirut" }, ZONES), "checkout.needAddress");
+assert.equal(checkoutProblem("DELIVERY", { ...ok, zone: "Beirut", address: "Hamra St" }, ZONES), null);
+// With no areas listed the picker is hidden, so it must not block the order.
+assert.equal(checkoutProblem("DELIVERY", { ...ok, address: "Hamra St" }, []), null);
 
 console.log("checks passed");

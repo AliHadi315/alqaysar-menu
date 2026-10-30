@@ -13,7 +13,10 @@ export function MenuSelector({ restaurant }: { restaurant: Restaurant }) {
   return (
     <div className="grid gap-4 sm:grid-cols-2">
       {MENU_TYPES.map((m, i) => {
-        const image = restaurant.menu_images?.[m.type];
+        const image =
+          restaurant.menu_images?.[m.type] ??
+          // Delivery sells the take-away menu, so it borrows that photo.
+          (m.type === "DELIVERY" ? restaurant.menu_images?.TAKE_AWAY : undefined);
         return (
           <Reveal key={m.slug} index={i}>
           <Link

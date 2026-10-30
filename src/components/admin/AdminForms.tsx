@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { MENU_TYPES } from "@/lib/types";
-import type { MenuType } from "@/lib/types";
+import { PRICE_LISTS } from "@/lib/types";
+import type { DeliveryZone, PriceList } from "@/lib/types";
 import {
   changePassword,
   FAVOURITES_SHOWN,
@@ -62,16 +62,16 @@ export function ItemForm({
     e.preventDefault();
     setError("");
 
-    const parsed: Partial<Record<MenuType, number>> = {};
-    for (const m of MENU_TYPES) {
-      const raw = prices[m.type].trim();
+    const parsed: Partial<Record<PriceList, number>> = {};
+    for (const m of PRICE_LISTS) {
+      const raw = prices[m.list].trim();
       if (raw === "") continue;
       const n = Number(raw);
       if (!Number.isFinite(n) || n < 0) {
         setError("Prices must be zero or more.");
         return;
       }
-      parsed[m.type] = n;
+      parsed[m.list] = n;
     }
     if (Object.keys(parsed).length === 0) {
       setError("Give the dish a price on at least one menu, otherwise it appears nowhere.");
@@ -171,16 +171,16 @@ export function ItemForm({
           Leave a box empty to keep the dish off that menu. A different price on each is fine.
         </p>
         <div className="grid gap-4 sm:grid-cols-2">
-          {MENU_TYPES.map((m) => (
-            <label key={m.type} className="block text-sm">
+          {PRICE_LISTS.map((m) => (
+            <label key={m.list} className="block text-sm">
               {m.label}
               <input
                 type="number"
                 step="0.01"
                 min="0"
                 inputMode="decimal"
-                value={prices[m.type]}
-                onChange={(e) => setPrices({ ...prices, [m.type]: e.target.value })}
+                value={prices[m.list]}
+                onChange={(e) => setPrices({ ...prices, [m.list]: e.target.value })}
                 placeholder="not on this menu"
                 className="a-input mt-1"
               />
@@ -429,6 +429,9 @@ export function SettingsEditor({
     Object.fromEntries(SETTING_FIELDS.map((f) => [f.key, (restaurant[f.key] as string) ?? ""]))
   );
   const [address, setAddress] = useState((restaurant.address as string) ?? "");
+  const [zones, setZones] = useState<DeliveryZone[]>(
+    Array.isArray(restaurant.delivery_zones) ? (restaurant.delivery_zones as DeliveryZone[]) : []
+  );
   const [busy, setBusy] = useState(false);
 
   return (
@@ -445,6 +448,17 @@ export function SettingsEditor({
           const rate = Number(values.lbp_rate);
           if (Number.isFinite(rate) && rate > 0) payload.lbp_rate = rate;
           else delete payload.lbp_rate;
+
+          // Drop unnamed rows so a half-typed area cannot reach the menu, and
+          // store the fee as a number rather than the string the input gives.
+          payload.delivery_zones = zones
+            .filter((z) => z.name.trim())
+            .map((z) => ({
+              name: z.name.trim(),
+              name_ar: z.name_ar?.trim() || null,
+              fee: Number(z.fee) > 0 ? Number(z.fee) : 0,
+            }));
+
           await saveRestaurant(restaurant.id as string, payload);
           await onDone();
           onSay("Restaurant details saved");
@@ -481,6 +495,67 @@ export function SettingsEditor({
         Address
         <textarea value={address} onChange={(e) => setAddress(e.target.value)} rows={2} className={area} />
       </label>
+
+      <fieldset className="border-t border-line pt-5">
+        <legend className="sr-only">Delivery areas</legend>
+        <p className="font-medium">Delivery areas</p>
+        <p className="mt-1 mb-3 text-sm text-muted">
+          Shown to customers ordering delivery. A fee of 0 still lists the area — it tells the
+          driver where to go — but adds nothing to the total.
+        </p>
+
+        <div className="space-y-2">
+          {zones.map((z, i) => (
+            <div key={i} className="flex flex-wrap items-end gap-2">
+              <label className="block flex-1 basis-40 text-sm">
+                Area
+                <input
+                  value={z.name}
+                  onChange={(e) => setZones(zones.map((x, n) => (n === i ? { ...x, name: e.target.value } : x)))}
+                  className="a-input mt-1"
+                />
+              </label>
+              <label className="block basis-32 text-sm">
+                In Arabic
+                <input
+                  value={z.name_ar ?? ""}
+                  onChange={(e) => setZones(zones.map((x, n) => (n === i ? { ...x, name_ar: e.target.value } : x)))}
+                  className="a-input mt-1"
+                />
+              </label>
+              <label className="block basis-24 text-sm">
+                Fee
+                <input
+                  type="number"
+                  step="0.01"
+                  min="0"
+                  inputMode="decimal"
+                  value={z.fee}
+                  onChange={(e) =>
+                    setZones(zones.map((x, n) => (n === i ? { ...x, fee: Number(e.target.value) } : x)))
+                  }
+                  className="a-input mt-1"
+                />
+              </label>
+              <button
+                type="button"
+                onClick={() => setZones(zones.filter((_, n) => n !== i))}
+                className="a-btn a-btn-danger"
+              >
+                Remove
+              </button>
+            </div>
+          ))}
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setZones([...zones, { name: "", name_ar: "", fee: 0 }])}
+          className="a-btn a-btn-ghost mt-3"
+        >
+          Add an area
+        </button>
+      </fieldset>
 
       <button type="submit" disabled={busy} className="a-btn a-btn-primary">
         {busy ? "Saving…" : "Save details"}

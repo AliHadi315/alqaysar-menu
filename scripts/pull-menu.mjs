@@ -18,6 +18,14 @@ for (const line of (await fs.readFile(path.join(ROOT, ".env.local"), "utf8").cat
   if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
 }
 
+// Mirrors the seed in supabase/migrations/0004_delivery_zones.sql so the site
+// behaves the same before and after that migration is run.
+const DEFAULT_ZONES = [
+  { name: "Dahye", name_ar: "الضاحية", fee: 4 },
+  { name: "Beirut", name_ar: "بيروت", fee: 5 },
+  { name: "Mount Lebanon", name_ar: "جبل لبنان", fee: 7 },
+];
+
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
@@ -50,6 +58,9 @@ try {
       ...(({ id, updated_at, ...rest }) => rest)(restaurant.data),
       // numeric arrives as a string, and the column is absent before 0003.
       lbp_rate: Number(restaurant.data.lbp_rate ?? 90000),
+      // Absent before 0004, in which case fall back to the areas the migration
+      // seeds. An explicit [] means the owner removed them all, so it is kept.
+      delivery_zones: restaurant.data.delivery_zones ?? DEFAULT_ZONES,
     },
     categories: categories.data.map(({ id, updated_at, is_active, ...c }) => c),
     items: items.data.map((i) => ({

@@ -41,7 +41,7 @@ const { data: existing } = await db.from("restaurants").select("id").limit(1).ma
 const restaurantRow = {
   name: r.name, tagline: r.tagline, description: r.description,
   established: r.established, badges: r.badges ?? [], currency: r.currency,
-  lbp_rate: r.lbp_rate ?? 90000,
+  lbp_rate: r.lbp_rate ?? 90000, delivery_zones: r.delivery_zones ?? [],
   phone: r.phone, whatsapp: r.whatsapp, email: r.email, address: r.address,
   opening_hours: r.opening_hours, maps_query: r.maps_query, maps_url: r.maps_url,
   instagram_url: r.instagram_url, facebook_url: r.facebook_url,

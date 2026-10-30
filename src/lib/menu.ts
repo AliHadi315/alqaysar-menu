@@ -1,6 +1,6 @@
 import data from "@/data/menu.json";
 import { favouritesOf } from "@/lib/favourites";
-import { OFFERS_GROUP } from "@/lib/types";
+import { OFFERS_GROUP, PRICE_LIST } from "@/lib/types";
 import type { Category, MenuData, MenuType, PricedItem, Restaurant } from "@/lib/types";
 
 /**
@@ -28,11 +28,15 @@ export function getCategories(menuType?: MenuType): Category[] {
   return offers.length ? [...offers, ...ordered.filter((c) => c.group !== OFFERS_GROUP)] : ordered;
 }
 
-/** Dishes on one menu, each with that menu's price. */
+/**
+ * Dishes on one menu, each with that menu's price. Delivery resolves to the
+ * take-away list, so the two share a price and can never drift apart.
+ */
 export function getMenuItems(menuType: MenuType): PricedItem[] {
+  const list = PRICE_LIST[menuType];
   return menu.items
-    .filter((i) => i.menus.includes(menuType))
-    .map((i) => ({ ...i, price: i.prices[menuType]! }));
+    .filter((i) => i.menus.includes(list))
+    .map((i) => ({ ...i, price: i.prices[list]! }));
 }
 
 /**
