@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { useLang } from "@/components/LanguageProvider";
 import { formatLbp, formatPrice } from "@/lib/format";
 import { checkoutProblem, deliveryFeeFor, needsAddress, orderTotals } from "@/lib/checkout";
@@ -17,6 +18,12 @@ import type { MenuType, Restaurant } from "@/lib/types";
  * The confirm control is a real link rather than a button that navigates:
  * mobile browsers block window.open outside a direct user gesture, and a link
  * also lets someone long-press to open WhatsApp Web instead.
+ *
+ * Rendered through a portal to <body>. The order bar that opens this has
+ * backdrop-blur, and backdrop-filter makes an element the containing block for
+ * its fixed-position descendants — so inside the bar, `fixed inset-0` covered
+ * the bar's own 68px strip instead of the viewport, leaving the page undimmed
+ * and the panel hanging off the bottom of the screen.
  */
 export function CheckoutSheet({
   open,
@@ -52,6 +59,8 @@ export function CheckoutSheet({
     };
   }, [open, onClose]);
 
+  // Safe to read `document` here: `open` only becomes true from a click, so
+  // this never runs during the static export.
   if (!open) return null;
 
   const zones = restaurant.delivery_zones ?? [];
@@ -70,7 +79,7 @@ export function CheckoutSheet({
   const set = (patch: Partial<CustomerDetails>) => setDetails({ ...details, ...patch });
   const href = problem ? null : orderUrl(restaurant, menuType, lines, details);
 
-  return (
+  return createPortal(
     <div
       role="dialog"
       aria-modal="true"
@@ -200,6 +209,7 @@ export function CheckoutSheet({
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
