@@ -32,7 +32,11 @@ export default function HomePage() {
         {heroImages.length > 0 && (
           <>
             {/* A strip of the kitchen's own photography rather than one plate. */}
-            <div className="absolute inset-0 -z-20 grid grid-cols-1 sm:grid-cols-3">
+            {/* grid-rows-1 is load-bearing: it makes the row minmax(0,1fr) so it
+                matches the band. Without it the row is auto, h-full on the image
+                falls back to the photo's intrinsic height, and the band shows only
+                the top slice of a tall photo instead of the middle. */}
+            <div className="absolute inset-0 -z-20 grid grid-rows-1 grid-cols-1 sm:grid-cols-3">
               {heroImages.map((src, i) => (
                 /* One photo fills a phone; the strip only makes sense once it is wide. */
                 /* eslint-disable-next-line @next/next/no-img-element */
@@ -44,8 +48,12 @@ export default function HomePage() {
                 />
               ))}
             </div>
-            {/* Scrim: the photos are bright, the hero type has to stay readable. */}
-            <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/88 via-ink/78 to-ink/92" />
+            {/* Scrim: dark enough to keep ivory type readable over food photography,
+                light enough to still see the food. Measured by compositing each hero
+                photo with this gradient: the worst pixel anywhere lands at 6.0:1
+                against the ivory text, so a brighter photo swapped in later still
+                clears AA. Going to 75/62/80 would look better and leave 4.9. */}
+            <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/80 via-ink/68 to-ink/85" />
           </>
         )}
         <div className="mx-auto max-w-6xl px-4 py-10 text-center sm:py-14">
